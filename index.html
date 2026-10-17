@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Fase de Inicio – Mercados Orgánicos</title>
+<style>
+:root{--bg:#f7f8fa;--card:#fff;--tx:#1f2933;--mu:#5b6770;--ac:#2f7d4f;--bd:#dde2e7;--r1:#d9f0e1;--r2:#fff2c9;--r3:#e6e3f7;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#14181c;--card:#1d2328;--tx:#e8ecef;--mu:#9aa5ae;--ac:#6cc58e;--bd:#2e373e;--r1:#1d3a28;--r2:#40361a;--r3:#2c2848;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#14181c;--card:#1d2328;--tx:#e8ecef;--mu:#9aa5ae;--ac:#6cc58e;--bd:#2e373e;--r1:#1d3a28;--r2:#40361a;--r3:#2c2848;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+header,main{max-width:1000px;margin:0 auto;padding:20px 16px}
+h1{margin:0 0 4px;font-size:1.7rem}h2{margin:36px 0 12px;font-size:1.3rem;color:var(--ac);border-bottom:2px solid var(--bd);padding-bottom:6px}h3{margin:20px 0 8px;font-size:1.05rem}
+p.s{color:var(--mu);margin:0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}
+.c{background:var(--card);border:1px solid var(--bd);border-radius:10px;padding:14px}
+.c h3{margin:0 0 8px;font-size:1rem;color:var(--ac)}
+.c ul{margin:0;padding-left:18px}
+.p{text-align:center;font-size:1.05rem;font-weight:600;border-color:var(--ac)}
+.w{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:.9rem;background:var(--card)}
+th,td{border:1px solid var(--bd);padding:6px 9px;text-align:left;vertical-align:top}
+th{background:var(--bd)}
+.r1{background:var(--r1)}.r2{background:var(--r2)}.r3{background:var(--r3)}
+.note{font-size:.85rem;color:var(--mu)}
+.badge{display:inline-block;padding:1px 8px;border-radius:99px;font-size:.8rem;font-weight:600}
+footer{max-width:1000px;margin:0 auto;padding:20px 16px 40px;color:var(--mu);font-size:.85rem}
+</style>
+</head>
+<body>
+<header>
+<h1>Fase de Inicio – Mercados Orgánicos</h1>
+<p class="s">Ingeniería de Software · Universidad Manuela Beltrán · Equipo 1: Juan Ramírez, Thomas Mendoza y Miguel Oviedo</p>
+</header>
+<main>
+
+<h2>1. Canvas de equipo</h2>
+<p class="note">Acuerdos del equipo, según la técnica Team Canvas (Metas, Roles y habilidades, Propósito, Valores, Reglas y actividades).</p>
+<div class="c p" style="margin-bottom:12px">Propósito: facilitar que productores de alimentos orgánicos vendan sus productos de forma periódica y que los consumidores accedan a productos frescos, de calidad y a buen precio, a través del marketplace Mercados Orgánicos.</div>
+<div class="grid">
+<div class="c"><h3>Metas del equipo</h3><ul><li>Entregar el MVP en 4 meses</li><li>Implementar buenas prácticas en el desarrollo</li></ul><h3 style="margin-top:12px">Metas individuales</h3><ul><li>Juan: profundizar en buenas prácticas de desarrollo y despliegue</li><li>Thomas: aprender más sobre Angular</li><li>Miguel: aprender a construir prototipos interactivos</li></ul></div>
+<div class="c"><h3>Roles y habilidades</h3><ul><li><b>Juan Ramírez:</b> líder de proyecto, comunicación efectiva, resolución de conflictos</li><li><b>Thomas Mendoza:</b> arquitectura, DevOps, Git, Spring Boot</li><li><b>Miguel Oviedo:</b> UX, prototipos, Angular</li></ul></div>
+<div class="c"><h3>Valores</h3><ul><li>Transparencia</li><li>Calidad</li><li>Confianza</li><li>Puntualidad</li><li>Respeto</li></ul></div>
+<div class="c"><h3>Reglas y actividades</h3><ul><li>Reunión semanal de seguimiento (lunes, 6:00 PM)</li><li>Tablero Kanban en Trello</li><li>Comunicación por Slack y correo electrónico</li><li>Todos opinan antes de tomar una decisión</li><li>Mínimo 8 horas de dedicación semanal por miembro</li></ul></div>
+</div>
+
+<h2>2. Visión del producto</h2>
+<h3>Usuarios</h3>
+<div class="grid">
+<div class="c"><h3>Productor</h3>Persona con cultivos de productos orgánicos que busca vender sus productos de forma periódica.</div>
+<div class="c"><h3>Consumidor</h3>Persona interesada en comprar productos orgánicos frescos, de la mejor calidad y a un excelente precio.</div>
+<div class="c"><h3>Administrador</h3>Representante de la empresa Mercados Orgánicos; intermedia entre productores y consumidores.</div>
+</div>
+
+<h3>Mapa de historias de usuario</h3>
+<p class="note">Eje horizontal: flujo del usuario (épica → actividad). Eje vertical: releases por prioridad. Release 1 = MVP.</p>
+<div class="w"><table id="map"></table></div>
+
+<h3>Product backlog</h3>
+<p class="note">Lista ordenada derivada del mapa. Prioridad MoSCoW: Release 1 = Must, Release 2 = Should, Release 3 = Could.</p>
+<div class="w"><table id="bl"><tr><th>#</th><th>Rol</th><th>Épica</th><th>Historia de usuario</th><th>Release</th><th>Prioridad</th></tr></table></div>
+</main>
+<footer>Documento elaborado para la actividad «Fase de inicio». Mapa original construido en Miro (tablero EX20MT2DA-VSM-MercadosOrgánicos).</footer>
+
+<script>
+// [rol, épica, historia, release]
+var P="Productor",A="Administrador",C="Consumidor";
+var S=[
+[A,"Catálogo de productos","Crear producto",1],[A,"Catálogo de productos","Ver listado de productos",1],[A,"Catálogo de productos","Ver detalle de producto",1],[A,"Catálogo de productos","Editar producto",1],[A,"Catálogo de productos","Eliminar producto",1],
+[A,"Canastas","Crear canasta",1],[A,"Canastas","Ver listado de canastas",1],[A,"Canastas","Ver detalle de canasta",1],[A,"Canastas","Modificar canasta",1],[A,"Canastas","Inactivar canasta",1],
+[P,"Gestionar cuenta","Registrar productor",1],[P,"Gestionar cuenta","Iniciar sesión",1],
+[A,"Administrar productores","Aprobar o rechazar un productor",1],[P,"Notificaciones","Recibir notificación de solicitud aprobada o rechazada",1],
+[P,"Ofertar productos","Registrar oferta",1],[P,"Ofertar productos","Confirmar oferta",1],
+[A,"Gestionar oferta de productos","Listar ofertas de la semana",1],[A,"Gestionar oferta de productos","Ver oferta por productor",1],[A,"Gestionar oferta de productos","Establecer precio de venta por producto",1],
+[A,"Administrar productores","Listar productores",1],[A,"Administrar productores","Ver productor",1],
+[A,"Administrar consumidores","Listar consumidores",1],[A,"Administrar consumidores","Ver consumidor",1],
+[A,"Reportes","Reporte de inventarios",1],
+[P,"Ofertar productos","Modificar oferta",2],
+[A,"Gestionar mercado","Abrir mercado",2],[A,"Gestionar mercado","Definir fecha y hora de apertura automática del mercado",2],
+[C,"Ver catálogo","Ver catálogo de productos",2],[C,"Ver catálogo","Ver información de producto",2],
+[C,"Gestionar cuenta","Registrar consumidor",2],[C,"Gestionar cuenta","Registrar medio de pago",2],
+[C,"Realizar compras","Agregar producto al carrito",2],[C,"Realizar compras","Eliminar producto del carrito",2],[C,"Realizar compras","Confirmar compra",2],
+[P,"Notificaciones","Recibir notificación de nuevo pedido",2],
+[P,"Gestionar pedidos","Listar pedidos",2],[P,"Gestionar pedidos","Ver detalle de pedido",2],[P,"Gestionar pedidos","Consultar pedidos",2],
+[A,"Administrar productores","Dar de baja un productor",2],
+[A,"Reportes","Reporte de productores por pedido",2],[A,"Reportes","Reporte de pedidos por día",2],[A,"Reportes","Lista de pedidos por cliente",2],
+[A,"Catálogo de productos","Inactivar producto",3],[A,"Catálogo de productos","Activar producto",3],
+["Todos","Gestionar cuenta","Cerrar sesión",3],["Todos","Gestionar cuenta","Ver perfil de usuario",3],["Todos","Gestionar cuenta","Actualizar perfil de usuario",3],
+[P,"Ofertar productos","Ver productos ofertados",3],
+[C,"Realizar compras","Vaciar carrito de compras",3],[C,"Gestionar cuenta","Actualizar medio de pago",3],[C,"Realizar compras","Seleccionar información de envío",3],
+[P,"Reportes","Consultar pedidos por fecha",3],[P,"Reportes","Listar histórico de pedidos",3],
+[A,"Reportes","Histórico de ofertas por semana",3],[A,"Reportes","Histórico de ofertas por producto",3],[A,"Reportes","Histórico de pedidos por producto",3],
+[A,"Administrar consumidores","Dar de baja un consumidor",3],[A,"Reportes","Reporte de ventas semanales",3]
+];
+var M={1:"Must",2:"Should",3:"Could"};
+var bl=document.getElementById("bl");
+S.forEach(function(s,i){
+  var r=document.createElement("tr");r.className="r"+s[3];
+  r.innerHTML="<td>"+(i+1)+"</td><td>"+s[0]+"</td><td>"+s[1]+"</td><td>"+s[2]+"</td><td>Release "+s[3]+"</td><td>"+M[s[3]]+"</td>";
+  bl.appendChild(r);
+});
+// Story map: columns = épicas, rows = releases
+var eps=[];S.forEach(function(s){if(eps.indexOf(s[1])<0)eps.push(s[1]);});
+var mp=document.getElementById("map");
+var h="<tr><th>Release</th>"+eps.map(function(e){return"<th>"+e+"</th>";}).join("")+"</tr>";
+[1,2,3].forEach(function(n){
+  h+='<tr class="r'+n+'"><th>Release '+n+(n==1?" (MVP)":"")+"</th>"+eps.map(function(e){
+    var l=S.filter(function(s){return s[1]==e&&s[3]==n;}).map(function(s){return"• "+s[2]+" <i>("+s[0]+")</i>";});
+    return"<td>"+l.join("<br>")+"</td>";}).join("")+"</tr>";
+});
+mp.innerHTML=h;
+</script>
+</body>
+</html>
