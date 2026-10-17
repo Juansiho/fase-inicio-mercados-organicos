@@ -54,7 +54,7 @@ footer{max-width:1000px;margin:0 auto;padding:20px 16px 40px;color:var(--mu);fon
 </div>
 
 <h3>Mapa de historias de usuario</h3>
-<p class="note">Eje horizontal: flujo del usuario (épica → actividad). Eje vertical: releases por prioridad. Release 1 = MVP.</p>
+<p class="note">Cada fila es una épica y las columnas son los releases, ordenados por prioridad. Release 1 = MVP.</p>
 <div class="w"><table id="map"></table></div>
 
 <h3>Product backlog</h3>
@@ -103,11 +103,11 @@ S.forEach(function(s,i){
 // Story map: columns = épicas, rows = releases
 var eps=[];S.forEach(function(s){if(eps.indexOf(s[1])<0)eps.push(s[1]);});
 var mp=document.getElementById("map");
-var h="<tr><th>Release</th>"+eps.map(function(e){return"<th>"+e+"</th>";}).join("")+"</tr>";
-[1,2,3].forEach(function(n){
-  h+='<tr class="r'+n+'"><th>Release '+n+(n==1?" (MVP)":"")+"</th>"+eps.map(function(e){
+var h="<tr><th>Épica</th><th>Release 1 (MVP)</th><th>Release 2</th><th>Release 3</th></tr>";
+eps.forEach(function(e){
+  h+="<tr><th>"+e+"</th>"+[1,2,3].map(function(n){
     var l=S.filter(function(s){return s[1]==e&&s[3]==n;}).map(function(s){return"• "+s[2]+" <i>("+s[0]+")</i>";});
-    return"<td>"+l.join("<br>")+"</td>";}).join("")+"</tr>";
+    return'<td class="r'+n+'">'+l.join("<br>")+"</td>";}).join("")+"</tr>";
 });
 mp.innerHTML=h;
 </script>
