@@ -3,66 +3,60 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Fase de Inicio – Mercados Orgánicos</title>
+<title>Fase de inicio - Mercados Orgánicos</title>
 <style>
-:root{--bg:#f7f8fa;--card:#fff;--tx:#1f2933;--mu:#5b6770;--ac:#2f7d4f;--bd:#dde2e7;--r1:#d9f0e1;--r2:#fff2c9;--r3:#e6e3f7;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#14181c;--card:#1d2328;--tx:#e8ecef;--mu:#9aa5ae;--ac:#6cc58e;--bd:#2e373e;--r1:#1d3a28;--r2:#40361a;--r3:#2c2848;color-scheme:dark}}
-:root[data-theme="dark"]{--bg:#14181c;--card:#1d2328;--tx:#e8ecef;--mu:#9aa5ae;--ac:#6cc58e;--bd:#2e373e;--r1:#1d3a28;--r2:#40361a;--r3:#2c2848;color-scheme:dark}
+:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
-header,main{max-width:1000px;margin:0 auto;padding:20px 16px}
-h1{margin:0 0 4px;font-size:1.7rem}h2{margin:36px 0 12px;font-size:1.3rem;color:var(--ac);border-bottom:2px solid var(--bd);padding-bottom:6px}h3{margin:20px 0 8px;font-size:1.05rem}
-p.s{color:var(--mu);margin:0}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}
-.c{background:var(--card);border:1px solid var(--bd);border-radius:10px;padding:14px}
-.c h3{margin:0 0 8px;font-size:1rem;color:var(--ac)}
-.c ul{margin:0;padding-left:18px}
-.p{text-align:center;font-size:1.05rem;font-weight:600;border-color:var(--ac)}
+body{margin:0;background:#fff;color:#222;font-family:Arial,Helvetica,sans-serif;line-height:1.5}
+main{max-width:960px;margin:0 auto;padding:20px 16px 40px}
+h1{font-size:1.6rem;margin:0 0 4px}
+h2{font-size:1.3rem;margin:32px 0 8px;border-bottom:1px solid #ccc;padding-bottom:4px}
+h3{font-size:1.05rem;margin:18px 0 6px}
+.sub{color:#555;margin:0}
+.cv{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:10px;margin-top:10px}
+.cv section{background:#f4f4f4;padding:10px 12px}
+.cv section.full{grid-column:1/-1}
+.cv h3{margin:0 0 6px;font-size:1rem}
+.q{margin:6px 0;font-size:.82rem;color:#666}
+.nn{display:flex;flex-wrap:wrap;gap:8px}
+.n{display:inline-block;padding:7px 10px;font-size:.88rem;line-height:1.3;color:#222;max-width:100%}
+.n.b{background:#bfdcff}.n.g{background:#c6ecaa}.n.y{background:#fdf0a0}.n.m{background:#f6b3e6}
 .w{overflow-x:auto}
-table{border-collapse:collapse;width:100%;font-size:.9rem;background:var(--card)}
-th,td{border:1px solid var(--bd);padding:6px 9px;text-align:left;vertical-align:top}
-th{background:var(--bd)}
-.r1{background:var(--r1)}.r2{background:var(--r2)}.r3{background:var(--r3)}
-.note{font-size:.85rem;color:var(--mu)}
-.badge{display:inline-block;padding:1px 8px;border-radius:99px;font-size:.8rem;font-weight:600}
-footer{max-width:1000px;margin:0 auto;padding:20px 16px 40px;color:var(--mu);font-size:.85rem}
+table{border-collapse:collapse;width:100%;font-size:.9rem}
+th,td{border:1px solid #bbb;padding:5px 8px;text-align:left;vertical-align:top}
+th{background:#e6e6e6}
+.r1{background:#e3f3e6}.r2{background:#fff6d6}.r3{background:#ebe8f7}
+.users td{background:#f4f4f4}
 </style>
 </head>
 <body>
-<header>
-<h1>Fase de Inicio – Mercados Orgánicos</h1>
-<p class="s">Ingeniería de Software · Universidad Manuela Beltrán · Equipo 1: Juan Ramírez, Thomas Mendoza y Miguel Oviedo</p>
-</header>
 <main>
+<h1>Fase de inicio - Mercados Orgánicos</h1>
+<p class="sub">Equipo 1: Juan Ramírez, Thomas Mendoza y Miguel Oviedo</p>
 
 <h2>1. Canvas de equipo</h2>
-<p class="note">Acuerdos del equipo, según la técnica Team Canvas (Metas, Roles y habilidades, Propósito, Valores, Reglas y actividades).</p>
-<div class="c p" style="margin-bottom:12px">Propósito: facilitar que productores de alimentos orgánicos vendan sus productos de forma periódica y que los consumidores accedan a productos frescos, de calidad y a buen precio, a través del marketplace Mercados Orgánicos.</div>
-<div class="grid">
-<div class="c"><h3>Metas del equipo</h3><ul><li>Entregar el MVP en 4 meses</li><li>Implementar buenas prácticas en el desarrollo</li></ul><h3 style="margin-top:12px">Metas individuales</h3><ul><li>Juan: profundizar en buenas prácticas de desarrollo y despliegue</li><li>Thomas: aprender más sobre Angular</li><li>Miguel: aprender a construir prototipos interactivos</li></ul></div>
-<div class="c"><h3>Roles y habilidades</h3><ul><li><b>Juan Ramírez:</b> líder de proyecto, comunicación efectiva, resolución de conflictos</li><li><b>Thomas Mendoza:</b> arquitectura, DevOps, Git, Spring Boot</li><li><b>Miguel Oviedo:</b> UX, prototipos, Angular</li></ul></div>
-<div class="c"><h3>Valores</h3><ul><li>Transparencia</li><li>Calidad</li><li>Confianza</li><li>Puntualidad</li><li>Respeto</li></ul></div>
-<div class="c"><h3>Reglas y actividades</h3><ul><li>Reunión semanal de seguimiento (lunes, 6:00 PM)</li><li>Tablero Kanban en Trello</li><li>Comunicación por Slack y correo electrónico</li><li>Todos opinan antes de tomar una decisión</li><li>Mínimo 8 horas de dedicación semanal por miembro</li></ul></div>
+<p>Tarjetas celestes: respuestas del grupo. Las demás son de cada integrante: <span class="n g">Juan</span> <span class="n y">Thomas</span> <span class="n m">Miguel</span></p>
+<div class="cv">
+<section class="full"><h3>Propósito</h3><div class="nn"><span class="n b">Facilitar que los productores de alimentos orgánicos vendan sus productos de forma periódica y que los consumidores consigan productos frescos, de calidad y a buen precio, a través de Mercados Orgánicos.</span></div></section>
+<section><h3>Metas</h3><div class="nn"><span class="n b">Entregar el MVP en 4 meses</span><span class="n b">Aplicar buenas prácticas en el desarrollo</span></div><p class="q">Metas individuales</p><div class="nn"><span class="n g">Juan: mejorar en buenas prácticas y despliegue</span><span class="n y">Thomas: aprender más sobre Angular</span><span class="n m">Miguel: aprender a hacer prototipos interactivos</span></div></section>
+<section><h3>Roles y habilidades</h3><div class="nn"><span class="n g"><b>Juan:</b> líder de proyecto, comunicación, resolución de conflictos</span><span class="n y"><b>Thomas:</b> arquitectura, DevOps, Git, Spring Boot</span><span class="n m"><b>Miguel:</b> UX, prototipos, Angular</span></div></section>
+<section><h3>Valores</h3><div class="nn"><span class="n b">Transparencia</span><span class="n b">Calidad</span><span class="n b">Confianza</span><span class="n b">Puntualidad</span><span class="n b">Respeto</span></div></section>
+<section><h3>Reglas y actividades</h3><div class="nn"><span class="n b">Reunión semanal de seguimiento los lunes a las 6:00 PM</span><span class="n b">Tablero Kanban en Trello</span><span class="n b">Comunicación por Slack y correo</span><span class="n b">Todos dan su opinión antes de decidir</span><span class="n b">Mínimo 8 horas semanales por persona</span></div></section>
 </div>
 
 <h2>2. Visión del producto</h2>
 <h3>Usuarios</h3>
-<div class="grid">
-<div class="c"><h3>Productor</h3>Persona con cultivos de productos orgánicos que busca vender sus productos de forma periódica.</div>
-<div class="c"><h3>Consumidor</h3>Persona interesada en comprar productos orgánicos frescos, de la mejor calidad y a un excelente precio.</div>
-<div class="c"><h3>Administrador</h3>Representante de la empresa Mercados Orgánicos; intermedia entre productores y consumidores.</div>
-</div>
+<table class="users"><tr><th>Productor</th><th>Consumidor</th><th>Administrador</th></tr>
+<tr><td>Persona con cultivos de productos orgánicos que quiere vender sus productos de forma periódica.</td><td>Persona que quiere comprar productos orgánicos frescos, de buena calidad y a buen precio.</td><td>Representante de Mercados Orgánicos; hace de intermediario entre productores y consumidores.</td></tr></table>
 
 <h3>Mapa de historias de usuario</h3>
-<p class="note">Cada fila es una épica y las columnas son los releases, ordenados por prioridad. Release 1 = MVP.</p>
+<p>Cada fila es una épica. El Release 1 es el MVP.</p>
 <div class="w"><table id="map"></table></div>
 
 <h3>Product backlog</h3>
-<p class="note">Lista ordenada derivada del mapa. Prioridad MoSCoW: Release 1 = Must, Release 2 = Should, Release 3 = Could.</p>
+<p>Ordenado por release. Release 1 = Must, Release 2 = Should, Release 3 = Could.</p>
 <div class="w"><table id="bl"><tr><th>#</th><th>Rol</th><th>Épica</th><th>Historia de usuario</th><th>Release</th><th>Prioridad</th></tr></table></div>
 </main>
-<footer>Documento elaborado para la actividad «Fase de inicio». Mapa original construido en Miro (tablero EX20MT2DA-VSM-MercadosOrgánicos).</footer>
-
 <script>
 // [rol, épica, historia, release]
 var P="Productor",A="Administrador",C="Consumidor";
