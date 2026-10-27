@@ -2,108 +2,311 @@
 <html lang="es">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Fase de inicio - Mercados Orgánicos</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fase de inicio - MatchPoint</title>
 <style>
-:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
 *{box-sizing:border-box}
-body{margin:0;background:#fff;color:#222;font-family:Arial,Helvetica,sans-serif;line-height:1.5}
-main{max-width:960px;margin:0 auto;padding:20px 16px 40px}
-h1{font-size:1.6rem;margin:0 0 4px}
-h2{font-size:1.3rem;margin:32px 0 8px;border-bottom:1px solid #ccc;padding-bottom:4px}
-h3{font-size:1.05rem;margin:18px 0 6px}
-.sub{color:#555;margin:0}
-.cv{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:10px;margin-top:10px}
-.cv section{background:#f4f4f4;padding:10px 12px}
-.cv section.full{grid-column:1/-1}
-.cv h3{margin:0 0 6px;font-size:1rem}
-.q{margin:6px 0;font-size:.82rem;color:#666}
-.nn{display:flex;flex-wrap:wrap;gap:8px}
-.n{display:inline-block;padding:7px 10px;font-size:.88rem;line-height:1.3;color:#222;max-width:100%}
-.n.b{background:#bfdcff}.n.g{background:#c6ecaa}.n.y{background:#fdf0a0}.n.m{background:#f6b3e6}
-.w{overflow-x:auto}
-table{border-collapse:collapse;width:100%;font-size:.9rem}
-th,td{border:1px solid #bbb;padding:5px 8px;text-align:left;vertical-align:top}
-th{background:#e6e6e6}
-.r1{background:#e3f3e6}.r2{background:#fff6d6}.r3{background:#ebe8f7}
-.users td{background:#f4f4f4}
+body{font-family:'Segoe UI',Roboto,Arial,sans-serif;color:#1f2937;margin:0;background:#fff;line-height:1.5}
+.wrap{max-width:1000px;margin:0 auto;padding:32px 20px 80px}
+.wide{max-width:1500px;margin:0 auto;padding:0 20px}
+h1{margin:0 0 4px;font-size:30px}
+h2{margin:48px 0 14px;font-size:23px;border-bottom:1px solid #e5e7eb;padding-bottom:6px}
+h3{margin:26px 0 10px;font-size:17px}
+.sub{color:#6b7280;margin:0}
+.note{color:#4b5563;margin:0 0 14px}
+.legend{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 14px}
+.chip{display:inline-block;padding:4px 12px;border-radius:4px;font-size:14px}
+.chip.j{background:#c6ecaa}.chip.t{background:#fdeea0}.chip.m{background:#f6b3e4}
+.board{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.col{background:#f4f4f4;padding:14px;border-radius:4px}
+.col.full{grid-column:1/-1}
+.col h4{margin:0 0 10px;font-size:15px}
+.sticky{padding:9px 12px;margin:0 0 8px;border-radius:2px;font-size:14px;display:block;width:fit-content;max-width:100%}
+.sticky.g{background:#bbdbfe}.sticky.j{background:#c6ecaa}.sticky.t{background:#fdeea0}.sticky.m{background:#f6b3e4}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips .sticky{margin:0}
+.small{font-size:13px;color:#6b7280;margin:6px 0}
+.vision{background:#f0f7ff;border-left:5px solid #1971c2;padding:14px 18px;border-radius:4px;font-size:16px}
+.cards3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.ucard{border:1px solid #e5e7eb;border-radius:8px;padding:14px;border-top:5px solid var(--c)}
+.ucard h4{margin:0 0 6px;color:var(--c)}
+.ucard p{margin:0;font-size:14px}
+ul.rules{margin:0;padding-left:20px}
+ul.rules li{margin:4px 0}
+.map-scroll{overflow-x:auto;padding-bottom:10px}
+.map{display:grid;grid-template-columns:120px repeat(var(--cols),minmax(190px,1fr));gap:10px;min-width:1500px;align-items:stretch}
+.epic{background:#1f2937;color:#fff;font-weight:700;text-align:center;border-radius:8px;padding:14px 8px;display:flex;align-items:center;justify-content:center;font-size:15px;position:relative}
+.epic:not(:last-of-type)::after{content:"";position:absolute;right:-9px;top:50%;margin-top:-6px;border-left:7px solid #9ca3af;border-top:6px solid transparent;border-bottom:6px solid transparent}
+.rel{border-radius:8px 0 0 8px;padding:12px;display:flex;flex-direction:column;justify-content:flex-start;gap:2px;border-left:6px solid}
+.rel strong{font-size:14px}.rel span{font-size:12px;font-weight:700}.rel em{font-size:11px;color:#6b7280;font-style:normal}
+.rel.r1{background:#e3f4e5;border-color:#2e7d32;color:#2e7d32}
+.rel.r2{background:#fff3cd;border-color:#b78103;color:#b78103}
+.rel.r3{background:#e8e6f7;border-color:#5f4bb6;color:#5f4bb6}
+.cell{padding:10px;display:flex;flex-direction:column;gap:8px;border-radius:6px}
+.cell.r1{background:#e3f4e5}.cell.r2{background:#fff3cd}.cell.r3{background:#e8e6f7}
+.card{background:#fff;border:1px solid #d1d5db;border-left:5px solid var(--rc);border-radius:6px;padding:8px 10px}
+.card p{margin:0 0 4px;font-size:13px;line-height:1.35}
+.card small{font-size:10.5px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--rc)}
+.card.adm{--rc:#d9480f}.card.usr{--rc:#1971c2}.card.sis{--rc:#0b7285}
+.keys{display:flex;gap:18px;flex-wrap:wrap;margin:12px 0;font-size:14px}
+.keys i{display:inline-block;width:13px;height:13px;border-radius:3px;margin-right:6px;vertical-align:-2px}
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 12px}
+.filters button{border:1px solid #d1d5db;background:#fff;border-radius:999px;padding:5px 14px;cursor:pointer;font-size:13px}
+.filters button.on{background:#1f2937;color:#fff;border-color:#1f2937}
+table{border-collapse:collapse;width:100%;font-size:14px}
+th,td{border:1px solid #d1d5db;padding:8px 10px;text-align:left}
+th{background:#e5e7eb}
+tr.r1 td{background:#e3f4e5}tr.r2 td{background:#fff3cd}tr.r3 td{background:#e8e6f7}
+@media(max-width:800px){.board,.cards3{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
-<main>
-<h1>Fase de inicio - Mercados Orgánicos</h1>
+<div class="wrap">
+<h1>Fase de inicio - MatchPoint</h1>
 <p class="sub">Equipo 1: Juan Ramírez, Thomas Mendoza y Miguel Oviedo</p>
+<p class="sub">Empresa solicitante: Nexo Digital Labs</p>
 
 <h2>1. Canvas de equipo</h2>
-<p>Tarjetas celestes: respuestas del grupo. Las demás son de cada integrante: <span class="n g">Juan</span> <span class="n y">Thomas</span> <span class="n m">Miguel</span></p>
-<div class="cv">
-<section class="full"><h3>Propósito</h3><div class="nn"><span class="n b">Facilitar que los productores de alimentos orgánicos vendan sus productos de forma periódica y que los consumidores consigan productos frescos, de calidad y a buen precio, a través de Mercados Orgánicos.</span></div></section>
-<section><h3>Metas</h3><div class="nn"><span class="n b">Entregar el MVP en 4 meses</span><span class="n b">Aplicar buenas prácticas en el desarrollo</span></div><p class="q">Metas individuales</p><div class="nn"><span class="n g">Juan: mejorar en buenas prácticas y despliegue</span><span class="n y">Thomas: aprender más sobre Angular</span><span class="n m">Miguel: aprender a hacer prototipos interactivos</span></div></section>
-<section><h3>Roles y habilidades</h3><div class="nn"><span class="n g"><b>Juan:</b> líder de proyecto, comunicación, resolución de conflictos</span><span class="n y"><b>Thomas:</b> arquitectura, DevOps, Git, Spring Boot</span><span class="n m"><b>Miguel:</b> UX, prototipos, Angular</span></div></section>
-<section><h3>Valores</h3><div class="nn"><span class="n b">Transparencia</span><span class="n b">Calidad</span><span class="n b">Confianza</span><span class="n b">Puntualidad</span><span class="n b">Respeto</span></div></section>
-<section><h3>Reglas y actividades</h3><div class="nn"><span class="n b">Reunión semanal de seguimiento los lunes a las 6:00 PM</span><span class="n b">Tablero Kanban en Trello</span><span class="n b">Comunicación por Slack y correo</span><span class="n b">Todos dan su opinión antes de decidir</span><span class="n b">Mínimo 8 horas semanales por persona</span></div></section>
+<div class="legend"><span class="note" style="margin:0">Tarjetas celestes: respuestas del grupo. Las demás son de cada integrante:</span>
+<span class="chip j">Juan</span><span class="chip t">Thomas</span><span class="chip m">Miguel</span></div>
+<div class="board">
+  <div class="col full"><h4>Propósito</h4>
+    <span class="sticky g" style="width:100%">Construir MatchPoint, una plataforma que centralice la gestión de torneos, pronósticos y créditos virtuales de Nexo Digital Labs, con operaciones confiables, trazabilidad completa y liquidación verificable de los resultados.</span></div>
+  <div class="col"><h4>Metas</h4>
+    <span class="sticky g">Entregar el MVP en 4 meses</span>
+    <span class="sticky g">Garantizar que los saldos y movimientos de créditos sean siempre consistentes</span>
+    <span class="sticky g">Aplicar buenas prácticas en el desarrollo</span>
+    <p class="small">Metas individuales</p>
+    <span class="sticky j">Juan: mejorar en buenas prácticas y despliegue</span>
+    <span class="sticky t">Thomas: aprender más sobre Angular</span>
+    <span class="sticky m">Miguel: aprender a hacer prototipos interactivos</span></div>
+  <div class="col"><h4>Roles y habilidades</h4>
+    <span class="sticky j"><b>Juan:</b> líder de proyecto, comunicación, resolución de conflictos</span>
+    <span class="sticky t"><b>Thomas:</b> arquitectura, DevOps, Git, Spring Boot</span>
+    <span class="sticky m"><b>Miguel:</b> UX, prototipos, Angular</span></div>
+  <div class="col"><h4>Valores</h4><div class="chips">
+    <span class="sticky g">Transparencia</span><span class="sticky g">Calidad</span><span class="sticky g">Confianza</span><span class="sticky g">Puntualidad</span><span class="sticky g">Respeto</span></div></div>
+  <div class="col full"><h4>Reglas y actividades</h4><div class="chips">
+    <span class="sticky g">Reunión semanal de seguimiento los lunes a las 6:00 PM</span>
+    <span class="sticky g">Tablero Kanban en Trello</span>
+    <span class="sticky g">Comunicación por Slack y correo</span>
+    <span class="sticky g">Todos dan su opinión antes de decidir</span>
+    <span class="sticky g">Mínimo 8 horas semanales por persona</span></div></div>
 </div>
 
 <h2>2. Visión del producto</h2>
+<p class="vision">Para <b>Nexo Digital Labs</b> y las comunidades deportivas que atiende, que hoy administran torneos y pronósticos con herramientas separadas y hojas de cálculo, <b>MatchPoint</b> es una plataforma que centraliza torneos, pronósticos y créditos virtuales, y garantiza que cada operación sea confiable, verificable y trazable. A diferencia del trabajo manual, evita descuentos duplicados, saldos incorrectos y liquidaciones erróneas.</p>
+
+<h3>Problema que resuelve</h3>
+<ul class="rules">
+  <li>Las participaciones, los créditos y los resultados se manejan en herramientas independientes y registros manuales.</li>
+  <li>Es difícil verificar resultados, controlar saldos e identificar errores.</li>
+  <li>Errores de conexión, solicitudes repetidas y operaciones simultáneas pueden duplicar descuentos o dejar saldos inconsistentes.</li>
+</ul>
+
 <h3>Usuarios</h3>
-<table class="users"><tr><th>Productor</th><th>Consumidor</th><th>Administrador</th></tr>
-<tr><td>Persona con cultivos de productos orgánicos que quiere vender sus productos de forma periódica.</td><td>Persona que quiere comprar productos orgánicos frescos, de buena calidad y a buen precio.</td><td>Representante de Mercados Orgánicos; hace de intermediario entre productores y consumidores.</td></tr></table>
+<div class="cards3">
+  <div class="ucard" style="--c:#d9480f"><h4>Administrador</h4><p>Responsable autorizado de Nexo Digital Labs. Crea torneos y eventos, administra participantes y créditos, publica y corrige resultados, y consulta la información consolidada.</p></div>
+  <div class="ucard" style="--c:#1971c2"><h4>Usuario (participante)</h4><p>Persona identificada en la plataforma. Consulta torneos, registra pronósticos antes del cierre y revisa su saldo, sus movimientos y sus resultados.</p></div>
+  <div class="ucard" style="--c:#0b7285"><h4>Sistema</h4><p>Reglas que MatchPoint debe cumplir por sí mismo: validar saldo y periodo, evitar duplicados, registrar movimientos y liquidar sin premios repetidos.</p></div>
+</div>
 
-<h3>Mapa de historias de usuario</h3>
-<p>Cada fila es una épica. El Release 1 es el MVP.</p>
-<div class="w"><table id="map"></table></div>
+<h3>Condiciones de operación (reglas del negocio)</h3>
+<ul class="rules">
+  <li>Solo usuarios autorizados administran torneos, programación y resultados oficiales.</li>
+  <li>Cada usuario solo consulta y gestiona sus propias participaciones y movimientos.</li>
+  <li>No se admiten pronósticos fuera del periodo habilitado de cada evento.</li>
+  <li>Ninguna operación puede usar créditos no disponibles; el saldo nunca es negativo.</li>
+  <li>Toda operación confirmada conserva su trazabilidad; las correcciones no borran el historial.</li>
+  <li>Solicitudes repetidas, fallas de comunicación y operaciones simultáneas no generan movimientos duplicados.</li>
+  <li>Las liquidaciones son verificables y no generan premios duplicados al repetirse.</li>
+  <li>Los créditos son solo virtuales: sin valor monetario, retiro ni conversión a dinero.</li>
+</ul>
+</div>
 
-<h3>Product backlog</h3>
-<p>Ordenado por release. Release 1 = Must, Release 2 = Should, Release 3 = Could.</p>
-<div class="w"><table id="bl"><tr><th>#</th><th>Rol</th><th>Épica</th><th>Historia de usuario</th><th>Release</th><th>Prioridad</th></tr></table></div>
-</main>
+<div class="wide">
+<h2 style="max-width:960px;margin-left:auto;margin-right:auto">3. Mapa de historias de usuario</h2>
+<p class="note" style="max-width:960px;margin:0 auto 6px">Las columnas (azul oscuro) son los grandes pasos del producto, de izquierda a derecha. Las filas son los releases: el primero es el MVP. Desplázate hacia la derecha si no cabe completo.</p>
+<div class="keys">
+  <span><i style="background:#d9480f"></i>Administrador</span>
+  <span><i style="background:#1971c2"></i>Usuario</span>
+  <span><i style="background:#0b7285"></i>Sistema</span>
+</div>
+<div class="map-scroll"><div class="map" style="--cols:7">
+<div class="corner"></div>
+<div class="epic">Cuenta y acceso</div>
+<div class="epic">Torneos y eventos</div>
+<div class="epic">Pronósticos</div>
+<div class="epic">Créditos virtuales</div>
+<div class="epic">Transacciones y trazabilidad</div>
+<div class="epic">Resultados y liquidación</div>
+<div class="epic">Consulta y seguimiento</div>
+<div class="rel r1"><strong>Release 1</strong><span>MVP</span><em>Must</em></div>
+<div class="cell r1">
+<div class="card usr"><p>Registrarme con una identificación en la plataforma</p><small>Usuario</small></div>
+<div class="card usr"><p>Iniciar sesión</p><small>Usuario</small></div>
+<div class="card sis"><p>Restringir acciones según el rol y los permisos</p><small>Sistema</small></div>
+</div>
+<div class="cell r1">
+<div class="card adm"><p>Crear un torneo</p><small>Administrador</small></div>
+<div class="card adm"><p>Registrar un evento con fecha y opciones de pronóstico</p><small>Administrador</small></div>
+<div class="card adm"><p>Definir la modalidad de pronóstico del evento</p><small>Administrador</small></div>
+<div class="card usr"><p>Consultar torneos disponibles</p><small>Usuario</small></div>
+<div class="card usr"><p>Ver eventos, fechas y estado de cada uno</p><small>Usuario</small></div>
+</div>
+<div class="cell r1">
+<div class="card usr"><p>Registrar un pronóstico en un evento habilitado</p><small>Usuario</small></div>
+<div class="card sis"><p>Validar que la opción elegida sea válida</p><small>Sistema</small></div>
+<div class="card sis"><p>Rechazar pronósticos fuera del periodo habilitado</p><small>Sistema</small></div>
+<div class="card adm"><p>Cerrar un evento a nuevas participaciones</p><small>Administrador</small></div>
+</div>
+<div class="cell r1">
+<div class="card adm"><p>Asignar créditos iniciales a un usuario</p><small>Administrador</small></div>
+<div class="card usr"><p>Consultar mi saldo de créditos</p><small>Usuario</small></div>
+<div class="card sis"><p>Verificar saldo suficiente antes de participar</p><small>Sistema</small></div>
+<div class="card sis"><p>Impedir que una operación deje saldo negativo</p><small>Sistema</small></div>
+</div>
+<div class="cell r1">
+<div class="card sis"><p>Registrar un movimiento por cada operación confirmada</p><small>Sistema</small></div>
+<div class="card sis"><p>Evitar descuentos duplicados por solicitudes repetidas</p><small>Sistema</small></div>
+<div class="card sis"><p>Controlar operaciones simultáneas sobre el mismo saldo</p><small>Sistema</small></div>
+</div>
+<div class="cell r1">
+<div class="card adm"><p>Registrar el resultado oficial de un evento</p><small>Administrador</small></div>
+<div class="card sis"><p>Determinar qué pronósticos fueron acertados</p><small>Sistema</small></div>
+<div class="card sis"><p>Liquidar y acreditar los premios</p><small>Sistema</small></div>
+<div class="card sis"><p>Evitar premios duplicados si la liquidación se repite</p><small>Sistema</small></div>
+</div>
+<div class="cell r1">
+<div class="card usr"><p>Ver los resultados de los eventos en que participé</p><small>Usuario</small></div>
+</div>
+<div class="rel r2"><strong>Release 2</strong><span></span><em>Should</em></div>
+<div class="cell r2">
+<div class="card usr"><p>Consultar mi información de participación</p><small>Usuario</small></div>
+<div class="card adm"><p>Asignar el rol de usuario autorizado</p><small>Administrador</small></div>
+</div>
+<div class="cell r2">
+<div class="card adm"><p>Administrar participantes del torneo</p><small>Administrador</small></div>
+<div class="card adm"><p>Modificar la programación de un evento</p><small>Administrador</small></div>
+</div>
+<div class="cell r2">
+<div class="card usr"><p>Consultar mis pronósticos anteriores y su estado</p><small>Usuario</small></div>
+<div class="card sis"><p>Impedir modificaciones sobre la participación original</p><small>Sistema</small></div>
+</div>
+<div class="cell r2">
+<div class="card adm"><p>Definir condiciones de uso de créditos por dinámica</p><small>Administrador</small></div>
+<div class="card adm"><p>Ajustar créditos con justificación</p><small>Administrador</small></div>
+<div class="card adm"><p>Verificar el saldo contra los movimientos registrados</p><small>Administrador</small></div>
+</div>
+<div class="cell r2">
+<div class="card usr"><p>Consultar mis movimientos de créditos</p><small>Usuario</small></div>
+<div class="card sis"><p>Registrar las operaciones fallidas</p><small>Sistema</small></div>
+<div class="card adm"><p>Revertir una operación con justificación</p><small>Administrador</small></div>
+</div>
+<div class="cell r2">
+<div class="card adm"><p>Confirmar el resultado publicado</p><small>Administrador</small></div>
+<div class="card adm"><p>Corregir un resultado publicado de forma controlada</p><small>Administrador</small></div>
+</div>
+<div class="cell r2">
+<div class="card adm"><p>Reporte consolidado de torneos y eventos</p><small>Administrador</small></div>
+<div class="card adm"><p>Reporte de participación por usuario</p><small>Administrador</small></div>
+<div class="card adm"><p>Reporte de movimientos de créditos</p><small>Administrador</small></div>
+<div class="card adm"><p>Reporte de liquidaciones realizadas</p><small>Administrador</small></div>
+</div>
+<div class="rel r3"><strong>Release 3</strong><span></span><em>Could</em></div>
+<div class="cell r3">
+<div class="card usr"><p>Actualizar mi perfil</p><small>Usuario</small></div>
+</div>
+<div class="cell r3">
+<div class="card adm"><p>Configurar nuevas modalidades de torneo</p><small>Administrador</small></div>
+</div>
+<div class="cell r3">
+<div class="card adm"><p>Incorporar nuevos tipos de pronóstico</p><small>Administrador</small></div>
+</div>
+<div class="cell r3">
+</div>
+<div class="cell r3">
+<div class="card adm"><p>Consultar el historial de ajustes y reversiones</p><small>Administrador</small></div>
+</div>
+<div class="cell r3">
+<div class="card sis"><p>Reliquidar tras una corrección conservando la trazabilidad</p><small>Sistema</small></div>
+</div>
+<div class="cell r3">
+<div class="card adm"><p>Detectar inconsistencias entre saldos, movimientos y liquidaciones</p><small>Administrador</small></div>
+<div class="card adm"><p>Consultar la traza completa de un usuario para atender reclamaciones</p><small>Administrador</small></div>
+</div>
+</div></div>
+</div>
+
+<div class="wrap" style="padding-top:0">
+<h2>4. Product backlog</h2>
+<p class="note">Ordenado por release. Release 1 = Must, Release 2 = Should, Release 3 = Could. Total: 49 historias.</p>
+<div class="filters" id="f">
+  <button class="on" data-k="all">Todas</button>
+  <button data-k="1">Release 1</button><button data-k="2">Release 2</button><button data-k="3">Release 3</button>
+</div>
+<table>
+<thead><tr><th>#</th><th>Rol</th><th>Épica</th><th>Historia de usuario</th><th>Release</th><th>Prioridad</th></tr></thead>
+<tbody id="b">
+<tr class="r1" data-rel="1" data-role="Usuario"><td>1</td><td>Usuario</td><td>Cuenta y acceso</td><td>Registrarme con una identificación en la plataforma</td><td>Release 1</td><td>Must</td></tr>
+<tr class="r1" data-rel="1" data-role="Usuario"><td>2</td><td>Usuario</td><td>Cuenta y acceso</td><td>Iniciar sesión</td><td>Release 1</td><td>Must</td></tr>
+<tr class="r1" data-rel="1" data-role="Sistema"><td>3</td><td>Sistema</td><td>Cuenta y acceso</td><td>Restringir acciones según el rol y los permisos</td><td>Release 1</td><td>Must</td></tr>
+<tr class="r1" data-rel="1" data-role="Administrador"><td>4</td><td>Administrador</td><td>Torneos y eventos</td><td>Crear un torneo</td><td>Release 1</td><td>Must</td></tr>
+<tr class="r1" data-rel="1" data-role="Administrador"><td>5</td><td>Administrador</td><td>Torneos y eventos</td><td>Registrar un evento con fecha y opciones de pronóstico</td><td>Release 1</td><td>Must</td></tr>
+<tr class="r1" data-rel="1" data-role="Administrador"><td>6</td><td>Administrador</td><td>Torneos y eventos</td><td>Definir la modalidad de pronóstico del evento</td><td>Release 1</td><td>Must</td></tr>
+<tr class="r1" data-rel="1" data-role="Usuario"><td>7</td><td>Usuario</td><td>Torneos y eventos</td><td>Consultar torneos disponibles</td><td>Release 1</td><td>Must</td></tr>
+<tr class="r1" data-rel="1" data-role="Usuario"><td>8</td><td>Usuario</td><td>Torneos y eventos</td><td>Ver eventos, fechas y estado de cada uno</td><td>Release 1</td><td>Must</td></tr>
+<tr class="r1" data-rel="1" data-role="Usuario"><td>9</td><td>Usuario</td><td>Pronósticos</td><td>Registrar un pronóstico en un evento habilitado</td><td>Release 1</td><td>Must</td></tr>
+<tr class="r1" data-rel="1" data-role="Sistema"><td>10</td><td>Sistema</td><td>Pronósticos</td><td>Validar que la opción elegida sea válida</td><td>Release 1</td><td>Must</td></tr>
+<tr class="r1" data-rel="1" data-role="Sistema"><td>11</td><td>Sistema</td><td>Pronósticos</td><td>Rechazar pronósticos fuera del periodo habilitado</td><td>Release 1</td><td>Must</td></tr>
+<tr class="r1" data-rel="1" data-role="Administrador"><td>12</td><td>Administrador</td><td>Pronósticos</td><td>Cerrar un evento a nuevas participaciones</td><td>Release 1</td><td>Must</td></tr>
+<tr class="r1" data-rel="1" data-role="Administrador"><td>13</td><td>Administrador</td><td>Créditos virtuales</td><td>Asignar créditos iniciales a un usuario</td><td>Release 1</td><td>Must</td></tr>
+<tr class="r1" data-rel="1" data-role="Usuario"><td>14</td><td>Usuario</td><td>Créditos virtuales</td><td>Consultar mi saldo de créditos</td><td>Release 1</td><td>Must</td></tr>
+<tr class="r1" data-rel="1" data-role="Sistema"><td>15</td><td>Sistema</td><td>Créditos virtuales</td><td>Verificar saldo suficiente antes de participar</td><td>Release 1</td><td>Must</td></tr>
+<tr class="r1" data-rel="1" data-role="Sistema"><td>16</td><td>Sistema</td><td>Créditos virtuales</td><td>Impedir que una operación deje saldo negativo</td><td>Release 1</td><td>Must</td></tr>
+<tr class="r1" data-rel="1" data-role="Sistema"><td>17</td><td>Sistema</td><td>Transacciones y trazabilidad</td><td>Registrar un movimiento por cada operación confirmada</td><td>Release 1</td><td>Must</td></tr>
+<tr class="r1" data-rel="1" data-role="Sistema"><td>18</td><td>Sistema</td><td>Transacciones y trazabilidad</td><td>Evitar descuentos duplicados por solicitudes repetidas</td><td>Release 1</td><td>Must</td></tr>
+<tr class="r1" data-rel="1" data-role="Sistema"><td>19</td><td>Sistema</td><td>Transacciones y trazabilidad</td><td>Controlar operaciones simultáneas sobre el mismo saldo</td><td>Release 1</td><td>Must</td></tr>
+<tr class="r1" data-rel="1" data-role="Administrador"><td>20</td><td>Administrador</td><td>Resultados y liquidación</td><td>Registrar el resultado oficial de un evento</td><td>Release 1</td><td>Must</td></tr>
+<tr class="r1" data-rel="1" data-role="Sistema"><td>21</td><td>Sistema</td><td>Resultados y liquidación</td><td>Determinar qué pronósticos fueron acertados</td><td>Release 1</td><td>Must</td></tr>
+<tr class="r1" data-rel="1" data-role="Sistema"><td>22</td><td>Sistema</td><td>Resultados y liquidación</td><td>Liquidar y acreditar los premios</td><td>Release 1</td><td>Must</td></tr>
+<tr class="r1" data-rel="1" data-role="Sistema"><td>23</td><td>Sistema</td><td>Resultados y liquidación</td><td>Evitar premios duplicados si la liquidación se repite</td><td>Release 1</td><td>Must</td></tr>
+<tr class="r1" data-rel="1" data-role="Usuario"><td>24</td><td>Usuario</td><td>Consulta y seguimiento</td><td>Ver los resultados de los eventos en que participé</td><td>Release 1</td><td>Must</td></tr>
+<tr class="r2" data-rel="2" data-role="Usuario"><td>25</td><td>Usuario</td><td>Cuenta y acceso</td><td>Consultar mi información de participación</td><td>Release 2</td><td>Should</td></tr>
+<tr class="r2" data-rel="2" data-role="Administrador"><td>26</td><td>Administrador</td><td>Cuenta y acceso</td><td>Asignar el rol de usuario autorizado</td><td>Release 2</td><td>Should</td></tr>
+<tr class="r2" data-rel="2" data-role="Administrador"><td>27</td><td>Administrador</td><td>Torneos y eventos</td><td>Administrar participantes del torneo</td><td>Release 2</td><td>Should</td></tr>
+<tr class="r2" data-rel="2" data-role="Administrador"><td>28</td><td>Administrador</td><td>Torneos y eventos</td><td>Modificar la programación de un evento</td><td>Release 2</td><td>Should</td></tr>
+<tr class="r2" data-rel="2" data-role="Usuario"><td>29</td><td>Usuario</td><td>Pronósticos</td><td>Consultar mis pronósticos anteriores y su estado</td><td>Release 2</td><td>Should</td></tr>
+<tr class="r2" data-rel="2" data-role="Sistema"><td>30</td><td>Sistema</td><td>Pronósticos</td><td>Impedir modificaciones sobre la participación original</td><td>Release 2</td><td>Should</td></tr>
+<tr class="r2" data-rel="2" data-role="Administrador"><td>31</td><td>Administrador</td><td>Créditos virtuales</td><td>Definir condiciones de uso de créditos por dinámica</td><td>Release 2</td><td>Should</td></tr>
+<tr class="r2" data-rel="2" data-role="Administrador"><td>32</td><td>Administrador</td><td>Créditos virtuales</td><td>Ajustar créditos con justificación</td><td>Release 2</td><td>Should</td></tr>
+<tr class="r2" data-rel="2" data-role="Administrador"><td>33</td><td>Administrador</td><td>Créditos virtuales</td><td>Verificar el saldo contra los movimientos registrados</td><td>Release 2</td><td>Should</td></tr>
+<tr class="r2" data-rel="2" data-role="Usuario"><td>34</td><td>Usuario</td><td>Transacciones y trazabilidad</td><td>Consultar mis movimientos de créditos</td><td>Release 2</td><td>Should</td></tr>
+<tr class="r2" data-rel="2" data-role="Sistema"><td>35</td><td>Sistema</td><td>Transacciones y trazabilidad</td><td>Registrar las operaciones fallidas</td><td>Release 2</td><td>Should</td></tr>
+<tr class="r2" data-rel="2" data-role="Administrador"><td>36</td><td>Administrador</td><td>Transacciones y trazabilidad</td><td>Revertir una operación con justificación</td><td>Release 2</td><td>Should</td></tr>
+<tr class="r2" data-rel="2" data-role="Administrador"><td>37</td><td>Administrador</td><td>Resultados y liquidación</td><td>Confirmar el resultado publicado</td><td>Release 2</td><td>Should</td></tr>
+<tr class="r2" data-rel="2" data-role="Administrador"><td>38</td><td>Administrador</td><td>Resultados y liquidación</td><td>Corregir un resultado publicado de forma controlada</td><td>Release 2</td><td>Should</td></tr>
+<tr class="r2" data-rel="2" data-role="Administrador"><td>39</td><td>Administrador</td><td>Consulta y seguimiento</td><td>Reporte consolidado de torneos y eventos</td><td>Release 2</td><td>Should</td></tr>
+<tr class="r2" data-rel="2" data-role="Administrador"><td>40</td><td>Administrador</td><td>Consulta y seguimiento</td><td>Reporte de participación por usuario</td><td>Release 2</td><td>Should</td></tr>
+<tr class="r2" data-rel="2" data-role="Administrador"><td>41</td><td>Administrador</td><td>Consulta y seguimiento</td><td>Reporte de movimientos de créditos</td><td>Release 2</td><td>Should</td></tr>
+<tr class="r2" data-rel="2" data-role="Administrador"><td>42</td><td>Administrador</td><td>Consulta y seguimiento</td><td>Reporte de liquidaciones realizadas</td><td>Release 2</td><td>Should</td></tr>
+<tr class="r3" data-rel="3" data-role="Usuario"><td>43</td><td>Usuario</td><td>Cuenta y acceso</td><td>Actualizar mi perfil</td><td>Release 3</td><td>Could</td></tr>
+<tr class="r3" data-rel="3" data-role="Administrador"><td>44</td><td>Administrador</td><td>Torneos y eventos</td><td>Configurar nuevas modalidades de torneo</td><td>Release 3</td><td>Could</td></tr>
+<tr class="r3" data-rel="3" data-role="Administrador"><td>45</td><td>Administrador</td><td>Pronósticos</td><td>Incorporar nuevos tipos de pronóstico</td><td>Release 3</td><td>Could</td></tr>
+<tr class="r3" data-rel="3" data-role="Administrador"><td>46</td><td>Administrador</td><td>Transacciones y trazabilidad</td><td>Consultar el historial de ajustes y reversiones</td><td>Release 3</td><td>Could</td></tr>
+<tr class="r3" data-rel="3" data-role="Sistema"><td>47</td><td>Sistema</td><td>Resultados y liquidación</td><td>Reliquidar tras una corrección conservando la trazabilidad</td><td>Release 3</td><td>Could</td></tr>
+<tr class="r3" data-rel="3" data-role="Administrador"><td>48</td><td>Administrador</td><td>Consulta y seguimiento</td><td>Detectar inconsistencias entre saldos, movimientos y liquidaciones</td><td>Release 3</td><td>Could</td></tr>
+<tr class="r3" data-rel="3" data-role="Administrador"><td>49</td><td>Administrador</td><td>Consulta y seguimiento</td><td>Consultar la traza completa de un usuario para atender reclamaciones</td><td>Release 3</td><td>Could</td></tr>
+</tbody></table>
+</div>
 <script>
-// [rol, épica, historia, release]
-var P="Productor",A="Administrador",C="Consumidor";
-var S=[
-[A,"Catálogo de productos","Crear producto",1],[A,"Catálogo de productos","Ver listado de productos",1],[A,"Catálogo de productos","Ver detalle de producto",1],[A,"Catálogo de productos","Editar producto",1],[A,"Catálogo de productos","Eliminar producto",1],
-[A,"Canastas","Crear canasta",1],[A,"Canastas","Ver listado de canastas",1],[A,"Canastas","Ver detalle de canasta",1],[A,"Canastas","Modificar canasta",1],[A,"Canastas","Inactivar canasta",1],
-[P,"Gestionar cuenta","Registrar productor",1],[P,"Gestionar cuenta","Iniciar sesión",1],
-[A,"Administrar productores","Aprobar o rechazar un productor",1],[P,"Notificaciones","Recibir notificación de solicitud aprobada o rechazada",1],
-[P,"Ofertar productos","Registrar oferta",1],[P,"Ofertar productos","Confirmar oferta",1],
-[A,"Gestionar oferta de productos","Listar ofertas de la semana",1],[A,"Gestionar oferta de productos","Ver oferta por productor",1],[A,"Gestionar oferta de productos","Establecer precio de venta por producto",1],
-[A,"Administrar productores","Listar productores",1],[A,"Administrar productores","Ver productor",1],
-[A,"Administrar consumidores","Listar consumidores",1],[A,"Administrar consumidores","Ver consumidor",1],
-[A,"Reportes","Reporte de inventarios",1],
-[P,"Ofertar productos","Modificar oferta",2],
-[A,"Gestionar mercado","Abrir mercado",2],[A,"Gestionar mercado","Definir fecha y hora de apertura automática del mercado",2],
-[C,"Ver catálogo","Ver catálogo de productos",2],[C,"Ver catálogo","Ver información de producto",2],
-[C,"Gestionar cuenta","Registrar consumidor",2],[C,"Gestionar cuenta","Registrar medio de pago",2],
-[C,"Realizar compras","Agregar producto al carrito",2],[C,"Realizar compras","Eliminar producto del carrito",2],[C,"Realizar compras","Confirmar compra",2],
-[P,"Notificaciones","Recibir notificación de nuevo pedido",2],
-[P,"Gestionar pedidos","Listar pedidos",2],[P,"Gestionar pedidos","Ver detalle de pedido",2],[P,"Gestionar pedidos","Consultar pedidos",2],
-[A,"Administrar productores","Dar de baja un productor",2],
-[A,"Reportes","Reporte de productores por pedido",2],[A,"Reportes","Reporte de pedidos por día",2],[A,"Reportes","Lista de pedidos por cliente",2],
-[A,"Catálogo de productos","Inactivar producto",3],[A,"Catálogo de productos","Activar producto",3],
-["Todos","Gestionar cuenta","Cerrar sesión",3],["Todos","Gestionar cuenta","Ver perfil de usuario",3],["Todos","Gestionar cuenta","Actualizar perfil de usuario",3],
-[P,"Ofertar productos","Ver productos ofertados",3],
-[C,"Realizar compras","Vaciar carrito de compras",3],[C,"Gestionar cuenta","Actualizar medio de pago",3],[C,"Realizar compras","Seleccionar información de envío",3],
-[P,"Reportes","Consultar pedidos por fecha",3],[P,"Reportes","Listar histórico de pedidos",3],
-[A,"Reportes","Histórico de ofertas por semana",3],[A,"Reportes","Histórico de ofertas por producto",3],[A,"Reportes","Histórico de pedidos por producto",3],
-[A,"Administrar consumidores","Dar de baja un consumidor",3],[A,"Reportes","Reporte de ventas semanales",3]
-];
-var M={1:"Must",2:"Should",3:"Could"};
-var bl=document.getElementById("bl");
-S.forEach(function(s,i){
-  var r=document.createElement("tr");r.className="r"+s[3];
-  r.innerHTML="<td>"+(i+1)+"</td><td>"+s[0]+"</td><td>"+s[1]+"</td><td>"+s[2]+"</td><td>Release "+s[3]+"</td><td>"+M[s[3]]+"</td>";
-  bl.appendChild(r);
+document.querySelectorAll('#f button').forEach(function(b){
+  b.onclick=function(){
+    document.querySelectorAll('#f button').forEach(function(x){x.classList.remove('on')});
+    b.classList.add('on');
+    var k=b.dataset.k;
+    document.querySelectorAll('#b tr').forEach(function(r){r.style.display=(k==='all'||r.dataset.rel===k)?'':'none'});
+  };
 });
-// Story map: columns = épicas, rows = releases
-var eps=[];S.forEach(function(s){if(eps.indexOf(s[1])<0)eps.push(s[1]);});
-var mp=document.getElementById("map");
-var h="<tr><th>Épica</th><th>Release 1 (MVP)</th><th>Release 2</th><th>Release 3</th></tr>";
-eps.forEach(function(e){
-  h+="<tr><th>"+e+"</th>"+[1,2,3].map(function(n){
-    var l=S.filter(function(s){return s[1]==e&&s[3]==n;}).map(function(s){return"• "+s[2]+" <i>("+s[0]+")</i>";});
-    return'<td class="r'+n+'">'+l.join("<br>")+"</td>";}).join("")+"</tr>";
-});
-mp.innerHTML=h;
 </script>
-</body>
-</html>
+</body></html>

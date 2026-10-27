@@ -1,0 +1,298 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1732 1109" width="1732" height="1109" font-family="Segoe UI, Roboto, Arial, sans-serif">
+<rect width="1732" height="1109" fill="#ffffff"/>
+<text x="16" y="28" font-size="20" font-weight="700" fill="#1f2937">MatchPoint · Mapa de historias de usuario</text>
+<text x="16" y="48" font-size="12" fill="#6b7280">Las columnas siguen el recorrido del producto de izquierda a derecha. Las filas son los releases (arriba lo más importante).</text>
+<rect x="134" y="64" width="202" height="58" rx="8" fill="#1f2937"/>
+<text x="235.0" y="98.0" font-size="14" font-weight="700" fill="#fff" text-anchor="middle">Cuenta y acceso</text>
+<path d="M338 88.0 l8 5 l-8 5 z" fill="#9ca3af"/>
+<rect x="360" y="64" width="202" height="58" rx="8" fill="#1f2937"/>
+<text x="461.0" y="98.0" font-size="14" font-weight="700" fill="#fff" text-anchor="middle">Torneos y eventos</text>
+<path d="M564 88.0 l8 5 l-8 5 z" fill="#9ca3af"/>
+<rect x="586" y="64" width="202" height="58" rx="8" fill="#1f2937"/>
+<text x="687.0" y="98.0" font-size="14" font-weight="700" fill="#fff" text-anchor="middle">Pronósticos</text>
+<path d="M790 88.0 l8 5 l-8 5 z" fill="#9ca3af"/>
+<rect x="812" y="64" width="202" height="58" rx="8" fill="#1f2937"/>
+<text x="913.0" y="98.0" font-size="14" font-weight="700" fill="#fff" text-anchor="middle">Créditos virtuales</text>
+<path d="M1016 88.0 l8 5 l-8 5 z" fill="#9ca3af"/>
+<rect x="1038" y="64" width="202" height="58" rx="8" fill="#1f2937"/>
+<text x="1139.0" y="90.0" font-size="14" font-weight="700" fill="#fff" text-anchor="middle">Transacciones y</text>
+<text x="1139.0" y="106.0" font-size="14" font-weight="700" fill="#fff" text-anchor="middle">trazabilidad</text>
+<path d="M1242 88.0 l8 5 l-8 5 z" fill="#9ca3af"/>
+<rect x="1264" y="64" width="202" height="58" rx="8" fill="#1f2937"/>
+<text x="1365.0" y="90.0" font-size="14" font-weight="700" fill="#fff" text-anchor="middle">Resultados y</text>
+<text x="1365.0" y="106.0" font-size="14" font-weight="700" fill="#fff" text-anchor="middle">liquidación</text>
+<path d="M1468 88.0 l8 5 l-8 5 z" fill="#9ca3af"/>
+<rect x="1490" y="64" width="202" height="58" rx="8" fill="#1f2937"/>
+<text x="1591.0" y="98.0" font-size="14" font-weight="700" fill="#fff" text-anchor="middle">Consulta y seguimiento</text>
+<rect x="16" y="134" width="1688" height="379" rx="10" fill="#e3f4e5"/>
+<rect x="16" y="134" width="6" height="379" rx="3" fill="#2e7d32"/>
+<text x="34" y="160" font-size="14" font-weight="700" fill="#2e7d32">Release 1</text>
+<text x="34" y="177" font-size="12" font-weight="700" fill="#2e7d32">MVP</text>
+<text x="34" y="194" font-size="11" fill="#6b7280">Must</text>
+<rect x="134" y="144" width="202" height="80" rx="6" fill="#fff" stroke="#d1d5db"/>
+<rect x="134" y="144" width="5" height="80" rx="2" fill="#1971c2"/>
+<text x="148" y="165" font-size="12" fill="#111827">Registrarme con una</text>
+<text x="148" y="180" font-size="12" fill="#111827">identificación en la</text>
+<text x="148" y="195" font-size="12" fill="#111827">plataforma</text>
+<text x="148" y="216" font-size="10.5" font-weight="700" fill="#1971c2">USUARIO</text>
+<rect x="134" y="232" width="202" height="50" rx="6" fill="#fff" stroke="#d1d5db"/>
+<rect x="134" y="232" width="5" height="50" rx="2" fill="#1971c2"/>
+<text x="148" y="253" font-size="12" fill="#111827">Iniciar sesión</text>
+<text x="148" y="274" font-size="10.5" font-weight="700" fill="#1971c2">USUARIO</text>
+<rect x="134" y="290" width="202" height="65" rx="6" fill="#fff" stroke="#d1d5db"/>
+<rect x="134" y="290" width="5" height="65" rx="2" fill="#0b7285"/>
+<text x="148" y="311" font-size="12" fill="#111827">Restringir acciones según</text>
+<text x="148" y="326" font-size="12" fill="#111827">el rol y los permisos</text>
+<text x="148" y="347" font-size="10.5" font-weight="700" fill="#0b7285">SISTEMA</text>
+<rect x="360" y="144" width="202" height="50" rx="6" fill="#fff" stroke="#d1d5db"/>
+<rect x="360" y="144" width="5" height="50" rx="2" fill="#d9480f"/>
+<text x="374" y="165" font-size="12" fill="#111827">Crear un torneo</text>
+<text x="374" y="186" font-size="10.5" font-weight="700" fill="#d9480f">ADMINISTRADOR</text>
+<rect x="360" y="202" width="202" height="80" rx="6" fill="#fff" stroke="#d1d5db"/>
+<rect x="360" y="202" width="5" height="80" rx="2" fill="#d9480f"/>
+<text x="374" y="223" font-size="12" fill="#111827">Registrar un evento con</text>
+<text x="374" y="238" font-size="12" fill="#111827">fecha y opciones de</text>
+<text x="374" y="253" font-size="12" fill="#111827">pronóstico</text>
+<text x="374" y="274" font-size="10.5" font-weight="700" fill="#d9480f">ADMINISTRADOR</text>
+<rect x="360" y="290" width="202" height="65" rx="6" fill="#fff" stroke="#d1d5db"/>
+<rect x="360" y="290" width="5" height="65" rx="2" fill="#d9480f"/>
+<text x="374" y="311" font-size="12" fill="#111827">Definir la modalidad de</text>
+<text x="374" y="326" font-size="12" fill="#111827">pronóstico del evento</text>
+<text x="374" y="347" font-size="10.5" font-weight="700" fill="#d9480f">ADMINISTRADOR</text>
+<rect x="360" y="363" width="202" height="65" rx="6" fill="#fff" stroke="#d1d5db"/>
+<rect x="360" y="363" width="5" height="65" rx="2" fill="#1971c2"/>
+<text x="374" y="384" font-size="12" fill="#111827">Consultar torneos</text>
+<text x="374" y="399" font-size="12" fill="#111827">disponibles</text>
+<text x="374" y="420" font-size="10.5" font-weight="700" fill="#1971c2">USUARIO</text>
+<rect x="360" y="436" width="202" height="65" rx="6" fill="#fff" stroke="#d1d5db"/>
+<rect x="360" y="436" width="5" height="65" rx="2" fill="#1971c2"/>
+<text x="374" y="457" font-size="12" fill="#111827">Ver eventos, fechas y</text>
+<text x="374" y="472" font-size="12" fill="#111827">estado de cada uno</text>
+<text x="374" y="493" font-size="10.5" font-weight="700" fill="#1971c2">USUARIO</text>
+<rect x="586" y="144" width="202" height="65" rx="6" fill="#fff" stroke="#d1d5db"/>
+<rect x="586" y="144" width="5" height="65" rx="2" fill="#1971c2"/>
+<text x="600" y="165" font-size="12" fill="#111827">Registrar un pronóstico en</text>
+<text x="600" y="180" font-size="12" fill="#111827">un evento habilitado</text>
+<text x="600" y="201" font-size="10.5" font-weight="700" fill="#1971c2">USUARIO</text>
+<rect x="586" y="217" width="202" height="65" rx="6" fill="#fff" stroke="#d1d5db"/>
+<rect x="586" y="217" width="5" height="65" rx="2" fill="#0b7285"/>
+<text x="600" y="238" font-size="12" fill="#111827">Validar que la opción</text>
+<text x="600" y="253" font-size="12" fill="#111827">elegida sea válida</text>
+<text x="600" y="274" font-size="10.5" font-weight="700" fill="#0b7285">SISTEMA</text>
+<rect x="586" y="290" width="202" height="65" rx="6" fill="#fff" stroke="#d1d5db"/>
+<rect x="586" y="290" width="5" height="65" rx="2" fill="#0b7285"/>
+<text x="600" y="311" font-size="12" fill="#111827">Rechazar pronósticos fuera</text>
+<text x="600" y="326" font-size="12" fill="#111827">del periodo habilitado</text>
+<text x="600" y="347" font-size="10.5" font-weight="700" fill="#0b7285">SISTEMA</text>
+<rect x="586" y="363" width="202" height="65" rx="6" fill="#fff" stroke="#d1d5db"/>
+<rect x="586" y="363" width="5" height="65" rx="2" fill="#d9480f"/>
+<text x="600" y="384" font-size="12" fill="#111827">Cerrar un evento a nuevas</text>
+<text x="600" y="399" font-size="12" fill="#111827">participaciones</text>
+<text x="600" y="420" font-size="10.5" font-weight="700" fill="#d9480f">ADMINISTRADOR</text>
+<rect x="812" y="144" width="202" height="65" rx="6" fill="#fff" stroke="#d1d5db"/>
+<rect x="812" y="144" width="5" height="65" rx="2" fill="#d9480f"/>
+<text x="826" y="165" font-size="12" fill="#111827">Asignar créditos iniciales</text>
+<text x="826" y="180" font-size="12" fill="#111827">a un usuario</text>
+<text x="826" y="201" font-size="10.5" font-weight="700" fill="#d9480f">ADMINISTRADOR</text>
+<rect x="812" y="217" width="202" height="65" rx="6" fill="#fff" stroke="#d1d5db"/>
+<rect x="812" y="217" width="5" height="65" rx="2" fill="#1971c2"/>
+<text x="826" y="238" font-size="12" fill="#111827">Consultar mi saldo de</text>
+<text x="826" y="253" font-size="12" fill="#111827">créditos</text>
+<text x="826" y="274" font-size="10.5" font-weight="700" fill="#1971c2">USUARIO</text>
+<rect x="812" y="290" width="202" height="65" rx="6" fill="#fff" stroke="#d1d5db"/>
+<rect x="812" y="290" width="5" height="65" rx="2" fill="#0b7285"/>
+<text x="826" y="311" font-size="12" fill="#111827">Verificar saldo suficiente</text>
+<text x="826" y="326" font-size="12" fill="#111827">antes de participar</text>
+<text x="826" y="347" font-size="10.5" font-weight="700" fill="#0b7285">SISTEMA</text>
+<rect x="812" y="363" width="202" height="65" rx="6" fill="#fff" stroke="#d1d5db"/>
+<rect x="812" y="363" width="5" height="65" rx="2" fill="#0b7285"/>
+<text x="826" y="384" font-size="12" fill="#111827">Impedir que una operación</text>
+<text x="826" y="399" font-size="12" fill="#111827">deje saldo negativo</text>
+<text x="826" y="420" font-size="10.5" font-weight="700" fill="#0b7285">SISTEMA</text>
+<rect x="1038" y="144" width="202" height="65" rx="6" fill="#fff" stroke="#d1d5db"/>
+<rect x="1038" y="144" width="5" height="65" rx="2" fill="#0b7285"/>
+<text x="1052" y="165" font-size="12" fill="#111827">Registrar un movimiento por</text>
+<text x="1052" y="180" font-size="12" fill="#111827">cada operación confirmada</text>
+<text x="1052" y="201" font-size="10.5" font-weight="700" fill="#0b7285">SISTEMA</text>
+<rect x="1038" y="217" width="202" height="80" rx="6" fill="#fff" stroke="#d1d5db"/>
+<rect x="1038" y="217" width="5" height="80" rx="2" fill="#0b7285"/>
+<text x="1052" y="238" font-size="12" fill="#111827">Evitar descuentos</text>
+<text x="1052" y="253" font-size="12" fill="#111827">duplicados por solicitudes</text>
+<text x="1052" y="268" font-size="12" fill="#111827">repetidas</text>
+<text x="1052" y="289" font-size="10.5" font-weight="700" fill="#0b7285">SISTEMA</text>
+<rect x="1038" y="305" width="202" height="80" rx="6" fill="#fff" stroke="#d1d5db"/>
+<rect x="1038" y="305" width="5" height="80" rx="2" fill="#0b7285"/>
+<text x="1052" y="326" font-size="12" fill="#111827">Controlar operaciones</text>
+<text x="1052" y="341" font-size="12" fill="#111827">simultáneas sobre el mismo</text>
+<text x="1052" y="356" font-size="12" fill="#111827">saldo</text>
+<text x="1052" y="377" font-size="10.5" font-weight="700" fill="#0b7285">SISTEMA</text>
+<rect x="1264" y="144" width="202" height="65" rx="6" fill="#fff" stroke="#d1d5db"/>
+<rect x="1264" y="144" width="5" height="65" rx="2" fill="#d9480f"/>
+<text x="1278" y="165" font-size="12" fill="#111827">Registrar el resultado</text>
+<text x="1278" y="180" font-size="12" fill="#111827">oficial de un evento</text>
+<text x="1278" y="201" font-size="10.5" font-weight="700" fill="#d9480f">ADMINISTRADOR</text>
+<rect x="1264" y="217" width="202" height="65" rx="6" fill="#fff" stroke="#d1d5db"/>
+<rect x="1264" y="217" width="5" height="65" rx="2" fill="#0b7285"/>
+<text x="1278" y="238" font-size="12" fill="#111827">Determinar qué pronósticos</text>
+<text x="1278" y="253" font-size="12" fill="#111827">fueron acertados</text>
+<text x="1278" y="274" font-size="10.5" font-weight="700" fill="#0b7285">SISTEMA</text>
+<rect x="1264" y="290" width="202" height="65" rx="6" fill="#fff" stroke="#d1d5db"/>
+<rect x="1264" y="290" width="5" height="65" rx="2" fill="#0b7285"/>
+<text x="1278" y="311" font-size="12" fill="#111827">Liquidar y acreditar los</text>
+<text x="1278" y="326" font-size="12" fill="#111827">premios</text>
+<text x="1278" y="347" font-size="10.5" font-weight="700" fill="#0b7285">SISTEMA</text>
+<rect x="1264" y="363" width="202" height="65" rx="6" fill="#fff" stroke="#d1d5db"/>
+<rect x="1264" y="363" width="5" height="65" rx="2" fill="#0b7285"/>
+<text x="1278" y="384" font-size="12" fill="#111827">Evitar premios duplicados</text>
+<text x="1278" y="399" font-size="12" fill="#111827">si la liquidación se repite</text>
+<text x="1278" y="420" font-size="10.5" font-weight="700" fill="#0b7285">SISTEMA</text>
+<rect x="1490" y="144" width="202" height="65" rx="6" fill="#fff" stroke="#d1d5db"/>
+<rect x="1490" y="144" width="5" height="65" rx="2" fill="#1971c2"/>
+<text x="1504" y="165" font-size="12" fill="#111827">Ver los resultados de los</text>
+<text x="1504" y="180" font-size="12" fill="#111827">eventos en que participé</text>
+<text x="1504" y="201" font-size="10.5" font-weight="700" fill="#1971c2">USUARIO</text>
+<rect x="16" y="525" width="1688" height="306" rx="10" fill="#fff3cd"/>
+<rect x="16" y="525" width="6" height="306" rx="3" fill="#b78103"/>
+<text x="34" y="551" font-size="14" font-weight="700" fill="#b78103">Release 2</text>
+<text x="34" y="568" font-size="11" fill="#6b7280">Should</text>
+<rect x="134" y="535" width="202" height="65" rx="6" fill="#fff" stroke="#d1d5db"/>
+<rect x="134" y="535" width="5" height="65" rx="2" fill="#1971c2"/>
+<text x="148" y="556" font-size="12" fill="#111827">Consultar mi información de</text>
+<text x="148" y="571" font-size="12" fill="#111827">participación</text>
+<text x="148" y="592" font-size="10.5" font-weight="700" fill="#1971c2">USUARIO</text>
+<rect x="134" y="608" width="202" height="65" rx="6" fill="#fff" stroke="#d1d5db"/>
+<rect x="134" y="608" width="5" height="65" rx="2" fill="#d9480f"/>
+<text x="148" y="629" font-size="12" fill="#111827">Asignar el rol de usuario</text>
+<text x="148" y="644" font-size="12" fill="#111827">autorizado</text>
+<text x="148" y="665" font-size="10.5" font-weight="700" fill="#d9480f">ADMINISTRADOR</text>
+<rect x="360" y="535" width="202" height="65" rx="6" fill="#fff" stroke="#d1d5db"/>
+<rect x="360" y="535" width="5" height="65" rx="2" fill="#d9480f"/>
+<text x="374" y="556" font-size="12" fill="#111827">Administrar participantes</text>
+<text x="374" y="571" font-size="12" fill="#111827">del torneo</text>
+<text x="374" y="592" font-size="10.5" font-weight="700" fill="#d9480f">ADMINISTRADOR</text>
+<rect x="360" y="608" width="202" height="65" rx="6" fill="#fff" stroke="#d1d5db"/>
+<rect x="360" y="608" width="5" height="65" rx="2" fill="#d9480f"/>
+<text x="374" y="629" font-size="12" fill="#111827">Modificar la programación</text>
+<text x="374" y="644" font-size="12" fill="#111827">de un evento</text>
+<text x="374" y="665" font-size="10.5" font-weight="700" fill="#d9480f">ADMINISTRADOR</text>
+<rect x="586" y="535" width="202" height="65" rx="6" fill="#fff" stroke="#d1d5db"/>
+<rect x="586" y="535" width="5" height="65" rx="2" fill="#1971c2"/>
+<text x="600" y="556" font-size="12" fill="#111827">Consultar mis pronósticos</text>
+<text x="600" y="571" font-size="12" fill="#111827">anteriores y su estado</text>
+<text x="600" y="592" font-size="10.5" font-weight="700" fill="#1971c2">USUARIO</text>
+<rect x="586" y="608" width="202" height="80" rx="6" fill="#fff" stroke="#d1d5db"/>
+<rect x="586" y="608" width="5" height="80" rx="2" fill="#0b7285"/>
+<text x="600" y="629" font-size="12" fill="#111827">Impedir modificaciones</text>
+<text x="600" y="644" font-size="12" fill="#111827">sobre la participación</text>
+<text x="600" y="659" font-size="12" fill="#111827">original</text>
+<text x="600" y="680" font-size="10.5" font-weight="700" fill="#0b7285">SISTEMA</text>
+<rect x="812" y="535" width="202" height="65" rx="6" fill="#fff" stroke="#d1d5db"/>
+<rect x="812" y="535" width="5" height="65" rx="2" fill="#d9480f"/>
+<text x="826" y="556" font-size="12" fill="#111827">Definir condiciones de uso</text>
+<text x="826" y="571" font-size="12" fill="#111827">de créditos por dinámica</text>
+<text x="826" y="592" font-size="10.5" font-weight="700" fill="#d9480f">ADMINISTRADOR</text>
+<rect x="812" y="608" width="202" height="65" rx="6" fill="#fff" stroke="#d1d5db"/>
+<rect x="812" y="608" width="5" height="65" rx="2" fill="#d9480f"/>
+<text x="826" y="629" font-size="12" fill="#111827">Ajustar créditos con</text>
+<text x="826" y="644" font-size="12" fill="#111827">justificación</text>
+<text x="826" y="665" font-size="10.5" font-weight="700" fill="#d9480f">ADMINISTRADOR</text>
+<rect x="812" y="681" width="202" height="65" rx="6" fill="#fff" stroke="#d1d5db"/>
+<rect x="812" y="681" width="5" height="65" rx="2" fill="#d9480f"/>
+<text x="826" y="702" font-size="12" fill="#111827">Verificar el saldo contra</text>
+<text x="826" y="717" font-size="12" fill="#111827">los movimientos registrados</text>
+<text x="826" y="738" font-size="10.5" font-weight="700" fill="#d9480f">ADMINISTRADOR</text>
+<rect x="1038" y="535" width="202" height="65" rx="6" fill="#fff" stroke="#d1d5db"/>
+<rect x="1038" y="535" width="5" height="65" rx="2" fill="#1971c2"/>
+<text x="1052" y="556" font-size="12" fill="#111827">Consultar mis movimientos</text>
+<text x="1052" y="571" font-size="12" fill="#111827">de créditos</text>
+<text x="1052" y="592" font-size="10.5" font-weight="700" fill="#1971c2">USUARIO</text>
+<rect x="1038" y="608" width="202" height="65" rx="6" fill="#fff" stroke="#d1d5db"/>
+<rect x="1038" y="608" width="5" height="65" rx="2" fill="#0b7285"/>
+<text x="1052" y="629" font-size="12" fill="#111827">Registrar las operaciones</text>
+<text x="1052" y="644" font-size="12" fill="#111827">fallidas</text>
+<text x="1052" y="665" font-size="10.5" font-weight="700" fill="#0b7285">SISTEMA</text>
+<rect x="1038" y="681" width="202" height="65" rx="6" fill="#fff" stroke="#d1d5db"/>
+<rect x="1038" y="681" width="5" height="65" rx="2" fill="#d9480f"/>
+<text x="1052" y="702" font-size="12" fill="#111827">Revertir una operación con</text>
+<text x="1052" y="717" font-size="12" fill="#111827">justificación</text>
+<text x="1052" y="738" font-size="10.5" font-weight="700" fill="#d9480f">ADMINISTRADOR</text>
+<rect x="1264" y="535" width="202" height="65" rx="6" fill="#fff" stroke="#d1d5db"/>
+<rect x="1264" y="535" width="5" height="65" rx="2" fill="#d9480f"/>
+<text x="1278" y="556" font-size="12" fill="#111827">Confirmar el resultado</text>
+<text x="1278" y="571" font-size="12" fill="#111827">publicado</text>
+<text x="1278" y="592" font-size="10.5" font-weight="700" fill="#d9480f">ADMINISTRADOR</text>
+<rect x="1264" y="608" width="202" height="80" rx="6" fill="#fff" stroke="#d1d5db"/>
+<rect x="1264" y="608" width="5" height="80" rx="2" fill="#d9480f"/>
+<text x="1278" y="629" font-size="12" fill="#111827">Corregir un resultado</text>
+<text x="1278" y="644" font-size="12" fill="#111827">publicado de forma</text>
+<text x="1278" y="659" font-size="12" fill="#111827">controlada</text>
+<text x="1278" y="680" font-size="10.5" font-weight="700" fill="#d9480f">ADMINISTRADOR</text>
+<rect x="1490" y="535" width="202" height="65" rx="6" fill="#fff" stroke="#d1d5db"/>
+<rect x="1490" y="535" width="5" height="65" rx="2" fill="#d9480f"/>
+<text x="1504" y="556" font-size="12" fill="#111827">Reporte consolidado de</text>
+<text x="1504" y="571" font-size="12" fill="#111827">torneos y eventos</text>
+<text x="1504" y="592" font-size="10.5" font-weight="700" fill="#d9480f">ADMINISTRADOR</text>
+<rect x="1490" y="608" width="202" height="65" rx="6" fill="#fff" stroke="#d1d5db"/>
+<rect x="1490" y="608" width="5" height="65" rx="2" fill="#d9480f"/>
+<text x="1504" y="629" font-size="12" fill="#111827">Reporte de participación</text>
+<text x="1504" y="644" font-size="12" fill="#111827">por usuario</text>
+<text x="1504" y="665" font-size="10.5" font-weight="700" fill="#d9480f">ADMINISTRADOR</text>
+<rect x="1490" y="681" width="202" height="65" rx="6" fill="#fff" stroke="#d1d5db"/>
+<rect x="1490" y="681" width="5" height="65" rx="2" fill="#d9480f"/>
+<text x="1504" y="702" font-size="12" fill="#111827">Reporte de movimientos de</text>
+<text x="1504" y="717" font-size="12" fill="#111827">créditos</text>
+<text x="1504" y="738" font-size="10.5" font-weight="700" fill="#d9480f">ADMINISTRADOR</text>
+<rect x="1490" y="754" width="202" height="65" rx="6" fill="#fff" stroke="#d1d5db"/>
+<rect x="1490" y="754" width="5" height="65" rx="2" fill="#d9480f"/>
+<text x="1504" y="775" font-size="12" fill="#111827">Reporte de liquidaciones</text>
+<text x="1504" y="790" font-size="12" fill="#111827">realizadas</text>
+<text x="1504" y="811" font-size="10.5" font-weight="700" fill="#d9480f">ADMINISTRADOR</text>
+<rect x="16" y="843" width="1688" height="190" rx="10" fill="#e8e6f7"/>
+<rect x="16" y="843" width="6" height="190" rx="3" fill="#5f4bb6"/>
+<text x="34" y="869" font-size="14" font-weight="700" fill="#5f4bb6">Release 3</text>
+<text x="34" y="886" font-size="11" fill="#6b7280">Could</text>
+<rect x="134" y="853" width="202" height="50" rx="6" fill="#fff" stroke="#d1d5db"/>
+<rect x="134" y="853" width="5" height="50" rx="2" fill="#1971c2"/>
+<text x="148" y="874" font-size="12" fill="#111827">Actualizar mi perfil</text>
+<text x="148" y="895" font-size="10.5" font-weight="700" fill="#1971c2">USUARIO</text>
+<rect x="360" y="853" width="202" height="65" rx="6" fill="#fff" stroke="#d1d5db"/>
+<rect x="360" y="853" width="5" height="65" rx="2" fill="#d9480f"/>
+<text x="374" y="874" font-size="12" fill="#111827">Configurar nuevas</text>
+<text x="374" y="889" font-size="12" fill="#111827">modalidades de torneo</text>
+<text x="374" y="910" font-size="10.5" font-weight="700" fill="#d9480f">ADMINISTRADOR</text>
+<rect x="586" y="853" width="202" height="65" rx="6" fill="#fff" stroke="#d1d5db"/>
+<rect x="586" y="853" width="5" height="65" rx="2" fill="#d9480f"/>
+<text x="600" y="874" font-size="12" fill="#111827">Incorporar nuevos tipos de</text>
+<text x="600" y="889" font-size="12" fill="#111827">pronóstico</text>
+<text x="600" y="910" font-size="10.5" font-weight="700" fill="#d9480f">ADMINISTRADOR</text>
+<rect x="1038" y="853" width="202" height="65" rx="6" fill="#fff" stroke="#d1d5db"/>
+<rect x="1038" y="853" width="5" height="65" rx="2" fill="#d9480f"/>
+<text x="1052" y="874" font-size="12" fill="#111827">Consultar el historial de</text>
+<text x="1052" y="889" font-size="12" fill="#111827">ajustes y reversiones</text>
+<text x="1052" y="910" font-size="10.5" font-weight="700" fill="#d9480f">ADMINISTRADOR</text>
+<rect x="1264" y="853" width="202" height="80" rx="6" fill="#fff" stroke="#d1d5db"/>
+<rect x="1264" y="853" width="5" height="80" rx="2" fill="#0b7285"/>
+<text x="1278" y="874" font-size="12" fill="#111827">Reliquidar tras una</text>
+<text x="1278" y="889" font-size="12" fill="#111827">corrección conservando la</text>
+<text x="1278" y="904" font-size="12" fill="#111827">trazabilidad</text>
+<text x="1278" y="925" font-size="10.5" font-weight="700" fill="#0b7285">SISTEMA</text>
+<rect x="1490" y="853" width="202" height="80" rx="6" fill="#fff" stroke="#d1d5db"/>
+<rect x="1490" y="853" width="5" height="80" rx="2" fill="#d9480f"/>
+<text x="1504" y="874" font-size="12" fill="#111827">Detectar inconsistencias</text>
+<text x="1504" y="889" font-size="12" fill="#111827">entre saldos, movimientos y</text>
+<text x="1504" y="904" font-size="12" fill="#111827">liquidaciones</text>
+<text x="1504" y="925" font-size="10.5" font-weight="700" fill="#d9480f">ADMINISTRADOR</text>
+<rect x="1490" y="941" width="202" height="80" rx="6" fill="#fff" stroke="#d1d5db"/>
+<rect x="1490" y="941" width="5" height="80" rx="2" fill="#d9480f"/>
+<text x="1504" y="962" font-size="12" fill="#111827">Consultar la traza completa</text>
+<text x="1504" y="977" font-size="12" fill="#111827">de un usuario para atender</text>
+<text x="1504" y="992" font-size="12" fill="#111827">reclamaciones</text>
+<text x="1504" y="1013" font-size="10.5" font-weight="700" fill="#d9480f">ADMINISTRADOR</text>
+<text x="16" y="1067" font-size="12" font-weight="700" fill="#374151">Rol:</text>
+<rect x="50" y="1056" width="14" height="14" rx="3" fill="#d9480f"/>
+<text x="70" y="1068" font-size="12" fill="#374151">Administrador</text>
+<rect x="180" y="1056" width="14" height="14" rx="3" fill="#1971c2"/>
+<text x="200" y="1068" font-size="12" fill="#374151">Usuario</text>
+<rect x="310" y="1056" width="14" height="14" rx="3" fill="#0b7285"/>
+<text x="330" y="1068" font-size="12" fill="#374151">Sistema</text>
+</svg>
