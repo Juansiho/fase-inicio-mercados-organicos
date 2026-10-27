@@ -1,0 +1,177 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Sprint 1 - MatchPoint</title><style>*{box-sizing:border-box}body{font-family:'Segoe UI',Roboto,Arial,sans-serif;color:#1f2937;margin:0;line-height:1.5}
+.w{max-width:1200px;margin:0 auto;padding:28px 20px 80px}h1{margin:0 0 4px;font-size:28px}h2{margin:40px 0 12px;font-size:22px;border-bottom:1px solid #e5e7eb;padding-bottom:6px}
+.sub{color:#6b7280;margin:0 0 6px}.chips{display:flex;gap:10px;flex-wrap:wrap;margin:14px 0}.chip{padding:6px 14px;border-radius:4px;font-size:14px}
+.board{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:10px}.col{background:#f4f4f4;border-radius:6px;padding:12px;min-height:80px}.col h3{margin:0 0 10px;font-size:15px}
+.cd{background:#fff;border-radius:6px;border-left:6px solid;padding:9px 11px;margin:0 0 9px;box-shadow:0 1px 2px rgba(0,0,0,.15);font-size:13.5px}
+.cd b{display:block;font-size:12px;color:#6b7280}.cd .m{display:flex;justify-content:space-between;align-items:center;margin-top:6px;font-size:12px}.pt{background:#1f2937;color:#fff;border-radius:999px;padding:1px 9px;font-weight:700}
+table{border-collapse:collapse;width:100%;font-size:14px;margin:8px 0}th,td{border:1px solid #d1d5db;padding:8px 10px;text-align:left;vertical-align:top}th{background:#e5e7eb}
+.hu{margin-top:34px}.hu h3{margin:0 0 6px;font-size:18px}ul,ol{margin:0;padding-left:20px}@media(max-width:800px){.board{grid-template-columns:1fr}}</style></head><body><div class="w">
+<h1>Sprint 1 - MatchPoint</h1><p class="sub">Equipo 1: Juan Ramírez, Thomas Mendoza y Miguel Oviedo · Empresa solicitante: Nexo Digital Labs</p>
+<p class="sub"><b>Objetivo del sprint:</b> Que un usuario pueda registrarse, iniciar sesión y ver los torneos y eventos, y que el administrador pueda crear torneos, eventos y asignar créditos.</p><p class="sub"><b>Total:</b> 9 historias, 29 puntos.</p>
+<div class="chips"><span class="chip" style="background:#c6ecaa">Juan: 9 puntos</span><span class="chip" style="background:#fdeea0">Thomas: 10 puntos</span><span class="chip" style="background:#f6b3e4">Miguel: 10 puntos</span></div>
+<h2>Tablero del sprint backlog</h2><div class="board">
+<div class="col"><h3>Por hacer (9)</h3>
+<div class="cd" style="border-color:#c6ecaa"><b>HU001 · Cuenta y acceso</b>Registrarme en la plataforma<div class="m"><span>Responsable: Juan</span><span class="pt">3</span></div></div>
+<div class="cd" style="border-color:#c6ecaa"><b>HU002 · Cuenta y acceso</b>Iniciar sesión<div class="m"><span>Responsable: Juan</span><span class="pt">3</span></div></div>
+<div class="cd" style="border-color:#fdeea0"><b>HU003 · Cuenta y acceso</b>Restringir acciones según el rol y los permisos<div class="m"><span>Responsable: Thomas</span><span class="pt">5</span></div></div>
+<div class="cd" style="border-color:#c6ecaa"><b>HU004 · Torneos y eventos</b>Crear un torneo<div class="m"><span>Responsable: Juan</span><span class="pt">3</span></div></div>
+<div class="cd" style="border-color:#f6b3e4"><b>HU005 · Torneos y eventos</b>Registrar un evento con fecha y opciones de pronóstico<div class="m"><span>Responsable: Miguel</span><span class="pt">5</span></div></div>
+<div class="cd" style="border-color:#f6b3e4"><b>HU007 · Torneos y eventos</b>Consultar torneos disponibles<div class="m"><span>Responsable: Miguel</span><span class="pt">2</span></div></div>
+<div class="cd" style="border-color:#f6b3e4"><b>HU008 · Torneos y eventos</b>Ver eventos, fechas y estado de cada uno<div class="m"><span>Responsable: Miguel</span><span class="pt">3</span></div></div>
+<div class="cd" style="border-color:#fdeea0"><b>HU013 · Créditos virtuales</b>Asignar créditos iniciales a un usuario<div class="m"><span>Responsable: Thomas</span><span class="pt">3</span></div></div>
+<div class="cd" style="border-color:#fdeea0"><b>HU014 · Créditos virtuales</b>Consultar mi saldo de créditos<div class="m"><span>Responsable: Thomas</span><span class="pt">2</span></div></div>
+</div>
+<div class="col"><h3>En progreso (0)</h3>
+</div>
+<div class="col"><h3>Hecho (0)</h3>
+</div>
+</div>
+<h2>Listado de historias del Sprint 1</h2><table><thead><tr><th>ID</th><th>Historia</th><th>Rol</th><th>Responsable</th><th>Puntos</th><th>Revisor</th></tr></thead><tbody>
+<tr><td>HU001</td><td>Registrarme en la plataforma</td><td>Usuario</td><td style="background:#c6ecaa">Juan</td><td>3</td><td>Thomas</td></tr>
+<tr><td>HU002</td><td>Iniciar sesión</td><td>Usuario</td><td style="background:#c6ecaa">Juan</td><td>3</td><td>Miguel</td></tr>
+<tr><td>HU003</td><td>Restringir acciones según el rol y los permisos</td><td>Sistema</td><td style="background:#fdeea0">Thomas</td><td>5</td><td>Juan</td></tr>
+<tr><td>HU004</td><td>Crear un torneo</td><td>Administrador</td><td style="background:#c6ecaa">Juan</td><td>3</td><td>Miguel</td></tr>
+<tr><td>HU005</td><td>Registrar un evento con fecha y opciones de pronóstico</td><td>Administrador</td><td style="background:#f6b3e4">Miguel</td><td>5</td><td>Thomas</td></tr>
+<tr><td>HU007</td><td>Consultar torneos disponibles</td><td>Usuario</td><td style="background:#f6b3e4">Miguel</td><td>2</td><td>Juan</td></tr>
+<tr><td>HU008</td><td>Ver eventos, fechas y estado de cada uno</td><td>Usuario</td><td style="background:#f6b3e4">Miguel</td><td>3</td><td>Thomas</td></tr>
+<tr><td>HU013</td><td>Asignar créditos iniciales a un usuario</td><td>Administrador</td><td style="background:#fdeea0">Thomas</td><td>3</td><td>Juan</td></tr>
+<tr><td>HU014</td><td>Consultar mi saldo de créditos</td><td>Usuario</td><td style="background:#fdeea0">Thomas</td><td>2</td><td>Miguel</td></tr>
+<tr><th colspan="4">Total</th><th>29</th><th></th></tr></tbody></table>
+<p class="sub">Estimación en puntos de historia (escala 1, 2, 3, 5).</p>
+<h2>Detalle de cada historia</h2>
+<div class="hu"><h3>HU001 - Registrarme en la plataforma</h3><table>
+<tr><th style="width:190px">Identificador</th><td>HU001</td></tr>
+<tr><th>Nombre</th><td>Registrarme en la plataforma</td></tr><tr><th>Descripción</th><td>Como Usuario quiero registrarme con una identificación en la plataforma para poder participar en torneos y pronósticos.</td></tr>
+<tr><th>Responsable</th><td>Juan</td></tr><tr><th>Estimación</th><td>3 puntos</td></tr>
+<tr><th>Paso a paso</th><td><ol><li>El Usuario abre la pantalla de registro.</li><li>Diligencia su identificación y los datos básicos.</li><li>Presiona Registrarme.</li><li>El sistema valida los datos y crea la cuenta con rol Usuario.</li><li>Se muestra confirmación y se redirige a iniciar sesión.</li></ol></td></tr>
+<tr><th>Criterios de aceptación</th><td><ul><li>El formulario solicita identificación y los datos básicos; los campos obligatorios se marcan.</li><li>Si la identificación ya existe, el sistema rechaza el registro y muestra un mensaje claro.</li><li>Si algún dato es inválido o falta, se indica el error junto al campo y no se crea la cuenta.</li><li>Al registrarse con éxito, la cuenta queda con rol Usuario y sin saldo hasta que el Administrador asigne créditos.</li></ul></td></tr></table>
+<table><thead><tr><th style="width:190px">Criterio de revisión</th><th>Comentario</th><th style="width:130px">Realizado por</th></tr></thead><tbody>
+<tr><td>Completo</td><td>El detalle y los criterios están completos. Falta definir qué datos básicos exactos se piden además de la identificación.</td><td>Thomas</td></tr>
+<tr><td>Consistente</td><td>Es coherente con la regla de que cada usuario gestiona solo lo suyo.</td><td>Thomas</td></tr>
+<tr><td>Negociable</td><td>El alcance se puede ajustar con el equipo y el docente (estimada en 3 puntos).</td><td>Thomas</td></tr>
+<tr><td>Valiosa</td><td>Aporta valor directo al MVP: sin ella no hay recorrido completo del producto.</td><td>Thomas</td></tr>
+<tr><td>Estimable</td><td>Con la descripción y los criterios de aceptación se puede estimar el esfuerzo.</td><td>Thomas</td></tr>
+<tr><td>Pequeña</td><td>Es pequeña y se puede terminar dentro del sprint.</td><td>Thomas</td></tr>
+<tr><td>Comprobable</td><td>Se puede probar con una identificación nueva, una repetida y campos vacíos.</td><td>Thomas</td></tr>
+</tbody></table></div>
+<div class="hu"><h3>HU002 - Iniciar sesión</h3><table>
+<tr><th style="width:190px">Identificador</th><td>HU002</td></tr>
+<tr><th>Nombre</th><td>Iniciar sesión</td></tr><tr><th>Descripción</th><td>Como Usuario quiero iniciar sesión para acceder a las funciones que me corresponden según mi rol.</td></tr>
+<tr><th>Responsable</th><td>Juan</td></tr><tr><th>Estimación</th><td>3 puntos</td></tr>
+<tr><th>Paso a paso</th><td><ol><li>El Usuario abre la pantalla de inicio de sesión.</li><li>Ingresa sus credenciales.</li><li>Presiona Ingresar.</li><li>El sistema valida las credenciales y abre una sesión.</li><li>Se redirige a la pantalla principal según el rol.</li></ol></td></tr>
+<tr><th>Criterios de aceptación</th><td><ul><li>Con credenciales correctas se inicia sesión y se muestra la pantalla principal del rol.</li><li>Con credenciales incorrectas se muestra un mensaje de error sin revelar cuál dato falló.</li><li>Una persona sin sesión no puede acceder a ninguna pantalla interna.</li><li>Existe una opción para cerrar sesión.</li></ul></td></tr></table>
+<table><thead><tr><th style="width:190px">Criterio de revisión</th><th>Comentario</th><th style="width:130px">Realizado por</th></tr></thead><tbody>
+<tr><td>Completo</td><td>Los criterios cubren los casos principales. Hace falta precisar el tiempo de vida de la sesión.</td><td>Miguel</td></tr>
+<tr><td>Consistente</td><td>Es consistente con HU001 y HU003.</td><td>Miguel</td></tr>
+<tr><td>Negociable</td><td>El alcance se puede ajustar con el equipo y el docente (estimada en 3 puntos).</td><td>Miguel</td></tr>
+<tr><td>Valiosa</td><td>Aporta valor directo al MVP: sin ella no hay recorrido completo del producto.</td><td>Miguel</td></tr>
+<tr><td>Estimable</td><td>Con la descripción y los criterios de aceptación se puede estimar el esfuerzo.</td><td>Miguel</td></tr>
+<tr><td>Pequeña</td><td>Es pequeña y se puede terminar dentro del sprint.</td><td>Miguel</td></tr>
+<tr><td>Comprobable</td><td>Los casos son claros: credenciales válidas, inválidas y sesión cerrada.</td><td>Miguel</td></tr>
+</tbody></table></div>
+<div class="hu"><h3>HU003 - Restringir acciones según el rol y los permisos</h3><table>
+<tr><th style="width:190px">Identificador</th><td>HU003</td></tr>
+<tr><th>Nombre</th><td>Restringir acciones según el rol y los permisos</td></tr><tr><th>Descripción</th><td>Como Sistema quiero restringir las acciones según el rol y los permisos para que solo los usuarios autorizados administren torneos, eventos y resultados.</td></tr>
+<tr><th>Responsable</th><td>Thomas</td></tr><tr><th>Estimación</th><td>5 puntos</td></tr>
+<tr><th>Paso a paso</th><td><ol><li>Se definen los roles Administrador y Usuario.</li><li>Se asocia cada operación con los roles que la pueden ejecutar.</li><li>El sistema valida el rol en cada solicitud.</li><li>Si el rol no está autorizado, rechaza la acción y muestra un mensaje.</li><li>Se verifica que un Usuario solo ve y gestiona su propia información.</li></ol></td></tr>
+<tr><th>Criterios de aceptación</th><td><ul><li>Solo el Administrador puede crear torneos, registrar eventos, asignar créditos y publicar resultados.</li><li>Un Usuario que intente una acción de Administrador recibe un mensaje de acceso denegado.</li><li>Un Usuario solo consulta y gestiona sus propias participaciones, saldo y movimientos.</li><li>La validación se hace en el servidor, no solo ocultando botones.</li></ul></td></tr></table>
+<table><thead><tr><th style="width:190px">Criterio de revisión</th><th>Comentario</th><th style="width:130px">Realizado por</th></tr></thead><tbody>
+<tr><td>Completo</td><td>Conviene listar explícitamente qué acciones corresponden a cada rol.</td><td>Juan</td></tr>
+<tr><td>Consistente</td><td>Respeta la regla del negocio sobre usuarios autorizados.</td><td>Juan</td></tr>
+<tr><td>Negociable</td><td>El alcance se puede ajustar con el equipo y el docente (estimada en 5 puntos).</td><td>Juan</td></tr>
+<tr><td>Valiosa</td><td>Aporta valor directo al MVP: sin ella no hay recorrido completo del producto.</td><td>Juan</td></tr>
+<tr><td>Estimable</td><td>Con la descripción y los criterios de aceptación se puede estimar el esfuerzo.</td><td>Juan</td></tr>
+<tr><td>Pequeña</td><td>Es de tamaño medio para el sprint; si se atrasa conviene dividirla.</td><td>Juan</td></tr>
+<tr><td>Comprobable</td><td>Es comprobable con una matriz rol-acción; es la historia con más casos de prueba.</td><td>Juan</td></tr>
+</tbody></table></div>
+<div class="hu"><h3>HU004 - Crear un torneo</h3><table>
+<tr><th style="width:190px">Identificador</th><td>HU004</td></tr>
+<tr><th>Nombre</th><td>Crear un torneo</td></tr><tr><th>Descripción</th><td>Como Administrador quiero crear un torneo para organizar los eventos sobre los que los usuarios harán pronósticos.</td></tr>
+<tr><th>Responsable</th><td>Juan</td></tr><tr><th>Estimación</th><td>3 puntos</td></tr>
+<tr><th>Paso a paso</th><td><ol><li>El Administrador entra a Torneos y elige Crear torneo.</li><li>Diligencia nombre y descripción.</li><li>Presiona Guardar.</li><li>El sistema valida y registra el torneo.</li><li>El torneo aparece en la lista de torneos.</li></ol></td></tr>
+<tr><th>Criterios de aceptación</th><td><ul><li>El formulario pide nombre y descripción del torneo.</li><li>No se permite crear un torneo sin nombre ni con un nombre repetido.</li><li>Al guardar, el torneo aparece en la lista para los usuarios.</li><li>Solo el Administrador puede ver la opción y ejecutarla.</li></ul></td></tr></table>
+<table><thead><tr><th style="width:190px">Criterio de revisión</th><th>Comentario</th><th style="width:130px">Realizado por</th></tr></thead><tbody>
+<tr><td>Completo</td><td>Falta decidir si el torneo tiene fechas de inicio y fin.</td><td>Miguel</td></tr>
+<tr><td>Consistente</td><td>Es consistente con HU003 y HU007.</td><td>Miguel</td></tr>
+<tr><td>Negociable</td><td>El alcance se puede ajustar con el equipo y el docente (estimada en 3 puntos).</td><td>Miguel</td></tr>
+<tr><td>Valiosa</td><td>Aporta valor directo al MVP: sin ella no hay recorrido completo del producto.</td><td>Miguel</td></tr>
+<tr><td>Estimable</td><td>Con la descripción y los criterios de aceptación se puede estimar el esfuerzo.</td><td>Miguel</td></tr>
+<tr><td>Pequeña</td><td>Es pequeña y se puede terminar dentro del sprint.</td><td>Miguel</td></tr>
+<tr><td>Comprobable</td><td>Fácil de probar: torneo válido, nombre vacío y nombre repetido.</td><td>Miguel</td></tr>
+</tbody></table></div>
+<div class="hu"><h3>HU005 - Registrar un evento con fecha y opciones de pronóstico</h3><table>
+<tr><th style="width:190px">Identificador</th><td>HU005</td></tr>
+<tr><th>Nombre</th><td>Registrar un evento con fecha y opciones de pronóstico</td></tr><tr><th>Descripción</th><td>Como Administrador quiero registrar un evento con su fecha y sus opciones de pronóstico para que los usuarios puedan participar en él.</td></tr>
+<tr><th>Responsable</th><td>Miguel</td></tr><tr><th>Estimación</th><td>5 puntos</td></tr>
+<tr><th>Paso a paso</th><td><ol><li>El Administrador abre un torneo y elige Registrar evento.</li><li>Ingresa nombre, fecha y hora de cierre y las opciones de pronóstico.</li><li>Presiona Guardar.</li><li>El sistema valida y crea el evento en estado Habilitado.</li><li>El evento aparece dentro del torneo.</li></ol></td></tr>
+<tr><th>Criterios de aceptación</th><td><ul><li>El evento exige nombre, fecha y hora de cierre y al menos dos opciones de pronóstico.</li><li>La fecha de cierre no puede estar en el pasado.</li><li>Al guardar, el evento queda habilitado y asociado al torneo.</li><li>Si falta algún dato, se muestran los errores y no se crea el evento.</li></ul></td></tr></table>
+<table><thead><tr><th style="width:190px">Criterio de revisión</th><th>Comentario</th><th style="width:130px">Realizado por</th></tr></thead><tbody>
+<tr><td>Completo</td><td>Falta aclarar si las opciones son fijas (por ejemplo ganador o empate) o libres; depende de la modalidad definida en HU006.</td><td>Thomas</td></tr>
+<tr><td>Consistente</td><td>Hay que alinearla con HU006 (modalidad de pronóstico), que queda para el Sprint 2.</td><td>Thomas</td></tr>
+<tr><td>Negociable</td><td>El alcance se puede ajustar con el equipo y el docente (estimada en 5 puntos).</td><td>Thomas</td></tr>
+<tr><td>Valiosa</td><td>Aporta valor directo al MVP: sin ella no hay recorrido completo del producto.</td><td>Thomas</td></tr>
+<tr><td>Estimable</td><td>Con la descripción y los criterios de aceptación se puede estimar el esfuerzo.</td><td>Thomas</td></tr>
+<tr><td>Pequeña</td><td>Es de tamaño medio para el sprint; si se atrasa conviene dividirla.</td><td>Thomas</td></tr>
+<tr><td>Comprobable</td><td>Se puede probar, pero requiere acordar antes el formato de las opciones.</td><td>Thomas</td></tr>
+</tbody></table></div>
+<div class="hu"><h3>HU007 - Consultar torneos disponibles</h3><table>
+<tr><th style="width:190px">Identificador</th><td>HU007</td></tr>
+<tr><th>Nombre</th><td>Consultar torneos disponibles</td></tr><tr><th>Descripción</th><td>Como Usuario quiero consultar los torneos disponibles para elegir en cuál participar.</td></tr>
+<tr><th>Responsable</th><td>Miguel</td></tr><tr><th>Estimación</th><td>2 puntos</td></tr>
+<tr><th>Paso a paso</th><td><ol><li>El Usuario inicia sesión.</li><li>Abre la sección Torneos.</li><li>El sistema lista los torneos disponibles.</li><li>El Usuario selecciona un torneo para ver sus eventos.</li></ol></td></tr>
+<tr><th>Criterios de aceptación</th><td><ul><li>La lista muestra el nombre y la descripción de cada torneo.</li><li>Si no hay torneos, se muestra un mensaje indicándolo.</li><li>Solo usuarios con sesión iniciada pueden ver la lista.</li><li>Al seleccionar un torneo se navega a sus eventos.</li></ul></td></tr></table>
+<table><thead><tr><th style="width:190px">Criterio de revisión</th><th>Comentario</th><th style="width:130px">Realizado por</th></tr></thead><tbody>
+<tr><td>Completo</td><td>Podría indicarse el número de eventos de cada torneo, aunque no es indispensable.</td><td>Juan</td></tr>
+<tr><td>Consistente</td><td>Es consistente con HU004.</td><td>Juan</td></tr>
+<tr><td>Negociable</td><td>El alcance se puede ajustar con el equipo y el docente (estimada en 2 puntos).</td><td>Juan</td></tr>
+<tr><td>Valiosa</td><td>Aporta valor directo al MVP: sin ella no hay recorrido completo del producto.</td><td>Juan</td></tr>
+<tr><td>Estimable</td><td>Con la descripción y los criterios de aceptación se puede estimar el esfuerzo.</td><td>Juan</td></tr>
+<tr><td>Pequeña</td><td>Es pequeña y se puede terminar dentro del sprint.</td><td>Juan</td></tr>
+<tr><td>Comprobable</td><td>Casos simples: con torneos, sin torneos y sin sesión.</td><td>Juan</td></tr>
+</tbody></table></div>
+<div class="hu"><h3>HU008 - Ver eventos, fechas y estado de cada uno</h3><table>
+<tr><th style="width:190px">Identificador</th><td>HU008</td></tr>
+<tr><th>Nombre</th><td>Ver eventos, fechas y estado de cada uno</td></tr><tr><th>Descripción</th><td>Como Usuario quiero ver los eventos de un torneo con su fecha y su estado para saber en cuáles puedo pronosticar.</td></tr>
+<tr><th>Responsable</th><td>Miguel</td></tr><tr><th>Estimación</th><td>3 puntos</td></tr>
+<tr><th>Paso a paso</th><td><ol><li>El Usuario selecciona un torneo.</li><li>El sistema muestra sus eventos con fecha y estado.</li><li>El Usuario identifica los eventos habilitados.</li><li>Desde un evento habilitado podrá ir a pronosticar (siguiente sprint).</li></ol></td></tr>
+<tr><th>Criterios de aceptación</th><td><ul><li>Cada evento muestra nombre, fecha, hora de cierre y estado (Habilitado, Cerrado, Con resultado).</li><li>El estado se calcula según la hora de cierre y las acciones del Administrador.</li><li>Los eventos se ordenan por fecha.</li><li>Si el torneo no tiene eventos, se muestra un mensaje.</li></ul></td></tr></table>
+<table><thead><tr><th style="width:190px">Criterio de revisión</th><th>Comentario</th><th style="width:130px">Realizado por</th></tr></thead><tbody>
+<tr><td>Completo</td><td>Falta definir los estados exactos y en qué momento cambia cada uno.</td><td>Thomas</td></tr>
+<tr><td>Consistente</td><td>Depende de HU005 para tener datos que mostrar.</td><td>Thomas</td></tr>
+<tr><td>Negociable</td><td>El alcance se puede ajustar con el equipo y el docente (estimada en 3 puntos).</td><td>Thomas</td></tr>
+<tr><td>Valiosa</td><td>Aporta valor directo al MVP: sin ella no hay recorrido completo del producto.</td><td>Thomas</td></tr>
+<tr><td>Estimable</td><td>Con la descripción y los criterios de aceptación se puede estimar el esfuerzo.</td><td>Thomas</td></tr>
+<tr><td>Pequeña</td><td>Es pequeña y se puede terminar dentro del sprint.</td><td>Thomas</td></tr>
+<tr><td>Comprobable</td><td>Comprobable con eventos en distintos estados.</td><td>Thomas</td></tr>
+</tbody></table></div>
+<div class="hu"><h3>HU013 - Asignar créditos iniciales a un usuario</h3><table>
+<tr><th style="width:190px">Identificador</th><td>HU013</td></tr>
+<tr><th>Nombre</th><td>Asignar créditos iniciales a un usuario</td></tr><tr><th>Descripción</th><td>Como Administrador quiero asignar créditos iniciales a un usuario para que pueda participar en los eventos.</td></tr>
+<tr><th>Responsable</th><td>Thomas</td></tr><tr><th>Estimación</th><td>3 puntos</td></tr>
+<tr><th>Paso a paso</th><td><ol><li>El Administrador busca al usuario.</li><li>Elige Asignar créditos e ingresa la cantidad.</li><li>Presiona Confirmar.</li><li>El sistema suma los créditos al saldo y registra el movimiento.</li><li>Se muestra el nuevo saldo.</li></ol></td></tr>
+<tr><th>Criterios de aceptación</th><td><ul><li>La cantidad debe ser un número entero positivo; otros valores se rechazan con un mensaje.</li><li>Al confirmar, el saldo del usuario aumenta exactamente en la cantidad asignada.</li><li>La asignación deja un registro con fecha, administrador y cantidad.</li><li>Una solicitud repetida por error no duplica la asignación.</li></ul></td></tr></table>
+<table><thead><tr><th style="width:190px">Criterio de revisión</th><th>Comentario</th><th style="width:130px">Realizado por</th></tr></thead><tbody>
+<tr><td>Completo</td><td>Falta decidir si hay un máximo de créditos por asignación.</td><td>Juan</td></tr>
+<tr><td>Consistente</td><td>Los créditos son solo virtuales, sin valor monetario, como pide el enunciado.</td><td>Juan</td></tr>
+<tr><td>Negociable</td><td>El alcance se puede ajustar con el equipo y el docente (estimada en 3 puntos).</td><td>Juan</td></tr>
+<tr><td>Valiosa</td><td>Aporta valor directo al MVP: sin ella no hay recorrido completo del producto.</td><td>Juan</td></tr>
+<tr><td>Estimable</td><td>Con la descripción y los criterios de aceptación se puede estimar el esfuerzo.</td><td>Juan</td></tr>
+<tr><td>Pequeña</td><td>Es pequeña y se puede terminar dentro del sprint.</td><td>Juan</td></tr>
+<tr><td>Comprobable</td><td>Comprobable verificando el saldo antes y después.</td><td>Juan</td></tr>
+</tbody></table></div>
+<div class="hu"><h3>HU014 - Consultar mi saldo de créditos</h3><table>
+<tr><th style="width:190px">Identificador</th><td>HU014</td></tr>
+<tr><th>Nombre</th><td>Consultar mi saldo de créditos</td></tr><tr><th>Descripción</th><td>Como Usuario quiero consultar mi saldo de créditos para saber con cuántos puedo participar.</td></tr>
+<tr><th>Responsable</th><td>Thomas</td></tr><tr><th>Estimación</th><td>2 puntos</td></tr>
+<tr><th>Paso a paso</th><td><ol><li>El Usuario inicia sesión.</li><li>Abre su panel o perfil.</li><li>El sistema muestra el saldo actual.</li><li>El saldo se actualiza tras una asignación.</li></ol></td></tr>
+<tr><th>Criterios de aceptación</th><td><ul><li>El saldo visible corresponde al del usuario con sesión iniciada y a ningún otro.</li><li>Un usuario sin créditos ve saldo 0.</li><li>El saldo se muestra siempre como un entero no negativo.</li><li>Tras una asignación del Administrador, el nuevo saldo se ve al recargar.</li></ul></td></tr></table>
+<table><thead><tr><th style="width:190px">Criterio de revisión</th><th>Comentario</th><th style="width:130px">Realizado por</th></tr></thead><tbody>
+<tr><td>Completo</td><td>Está completa para su alcance.</td><td>Miguel</td></tr>
+<tr><td>Consistente</td><td>Es consistente con HU013.</td><td>Miguel</td></tr>
+<tr><td>Negociable</td><td>El alcance se puede ajustar con el equipo y el docente (estimada en 2 puntos).</td><td>Miguel</td></tr>
+<tr><td>Valiosa</td><td>Aporta valor directo al MVP: sin ella no hay recorrido completo del producto.</td><td>Miguel</td></tr>
+<tr><td>Estimable</td><td>Con la descripción y los criterios de aceptación se puede estimar el esfuerzo.</td><td>Miguel</td></tr>
+<tr><td>Pequeña</td><td>Es pequeña y se puede terminar dentro del sprint.</td><td>Miguel</td></tr>
+<tr><td>Comprobable</td><td>Es la más sencilla: se compara el saldo mostrado con el almacenado.</td><td>Miguel</td></tr>
+</tbody></table></div>
+</div></body></html>
