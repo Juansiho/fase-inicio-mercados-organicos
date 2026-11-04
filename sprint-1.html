@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Avance Sprint 1 - MatchPoint</title><style>
+*{box-sizing:border-box}body{font-family:'Segoe UI',Roboto,Arial,sans-serif;color:#1f2937;margin:0;line-height:1.5;background:#fff}
+.wrap{max-width:1100px;margin:0 auto;padding:32px 20px 80px}
+h1{margin:0 0 4px;font-size:30px}h2{margin:44px 0 14px;font-size:23px;border-bottom:1px solid #e5e7eb;padding-bottom:6px}
+h3{margin:0 0 10px;font-size:19px}h4{margin:18px 0 8px}h5{margin:12px 0 4px;font-size:14px}
+.sub{color:#6b7280;margin:0}.note{color:#4b5563;margin:0 0 14px}.small{font-size:13px;color:#6b7280;margin:2px 0 6px}
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:18px 0}
+.kpi{border:1px solid #e5e7eb;border-radius:8px;padding:12px 14px}.kpi b{display:block;font-size:26px}.kpi span{font-size:13px;color:#6b7280}
+.bar{height:10px;background:#e5e7eb;border-radius:6px;overflow:hidden;margin-top:6px}.bar i{display:block;height:100%;background:#2e7d32}
+.kanban{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.kcol{background:#f4f4f4;border-radius:6px;padding:10px;min-height:120px}
+.kcol h4{margin:0 0 10px;padding-bottom:6px;border-bottom:3px solid;font-size:14px;display:flex;justify-content:space-between;gap:6px}
+.kcol h4 span{font-weight:400;color:#6b7280;font-size:12px}
+.kcard{display:block;background:#fff;border:1px solid #d1d5db;border-left:5px solid;border-radius:6px;padding:8px 10px;margin-bottom:8px;font-size:13px;color:inherit;text-decoration:none}
+.kcard:hover{box-shadow:0 1px 6px rgba(0,0,0,.15)}
+.meta{display:flex;justify-content:space-between;margin-top:6px;align-items:center}
+.who{color:#fff;font-size:11px;padding:1px 8px;border-radius:10px}.pt{font-size:12px;font-weight:700}
+table{border-collapse:collapse;width:100%;font-size:14px;margin:6px 0}th,td{border:1px solid #d1d5db;padding:8px 10px;text-align:left;vertical-align:top}
+th{background:#e5e7eb}td.n{text-align:center;font-weight:700}tr.tot td{background:#f4f4f4;font-weight:700}
+.st{color:#fff;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap}
+table.kv th{width:190px;background:#f4f4f4}table.kv ol,table.kv ul{margin:0;padding-left:20px}
+.hu{margin:28px 0;padding-top:6px}
+.persona{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.pc{border:1px solid #e5e7eb;border-top:5px solid var(--c);border-radius:8px;padding:12px 14px}.pc b{font-size:16px}
+.ses{border:1px solid #e5e7eb;border-radius:8px;padding:14px 16px;margin:0 0 14px}
+.sh{display:flex;justify-content:space-between;flex-wrap:wrap;gap:6px}.sh span{color:#6b7280;font-size:14px}
+.ses ul{margin:0;padding-left:20px}.two{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:8px}
+.sm,.po{padding:8px 12px;border-radius:6px}.sm{background:#eef6ff}.po{background:#fff6e6}.sm p,.po p{margin:0;font-size:14px}
+.chart{max-width:640px}
+@media(max-width:800px){.kanban,.kpis,.persona,.two{grid-template-columns:1fr 1fr}.kanban{grid-template-columns:1fr}.two{grid-template-columns:1fr}.persona{grid-template-columns:1fr}}
+</style></head>
+<body><div class="wrap">
+<h1>Avance Sprint 1 - MatchPoint</h1>
+<p class="sub">Equipo 1: Juan Ramírez, Thomas Mendoza y Miguel Oviedo</p>
+<p class="sub">Sprint 1 · 20 oct – 9 nov · Corte al 3 de noviembre · Scrum Master: Juan · Product Owner: Miguel</p>
+
+<div class="kpis">
+ <div class="kpi"><b>32</b><span>puntos comprometidos (9 HU)</span></div>
+ <div class="kpi"><b>11</b><span>puntos terminados (3 HU)</span></div>
+ <div class="kpi"><b>21</b><span>puntos pendientes</span></div>
+ <div class="kpi"><b>34%</b><span>de avance<div class="bar"><i style="width:34%"></i></div></span></div>
+</div>
+
+<h2>1. Tablero del Sprint 1</h2>
+<p class="note">Cada tarjeta muestra la historia, su responsable (color) y los puntos estimados. Pulsa una tarjeta para ver su detalle.</p>
+<div class="kanban"><div class="kcol"><h4 style="border-color:#6b7280">Por hacer <span>3 HU · 10 pts</span></h4><a class="kcard" href="#HU07" style="border-left-color:#2e7d32"><b>HU07</b> Asignar créditos iniciales a un usuario<div class="meta"><span class="who" style="background:#2e7d32">Juan</span><span class="pt">3 pts</span></div></a><a class="kcard" href="#HU08" style="border-left-color:#c2188f"><b>HU08</b> Consultar mi saldo de créditos<div class="meta"><span class="who" style="background:#c2188f">Miguel</span><span class="pt">2 pts</span></div></a><a class="kcard" href="#HU09" style="border-left-color:#b78103"><b>HU09</b> Restringir acciones según el rol y los permisos<div class="meta"><span class="who" style="background:#b78103">Thomas</span><span class="pt">5 pts</span></div></a></div><div class="kcol"><h4 style="border-color:#1971c2">En progreso <span>2 HU · 8 pts</span></h4><a class="kcard" href="#HU04" style="border-left-color:#2e7d32"><b>HU04</b> Registrar un evento con fecha y opciones de pronóstico<div class="meta"><span class="who" style="background:#2e7d32">Juan</span><span class="pt">5 pts</span></div></a><a class="kcard" href="#HU06" style="border-left-color:#c2188f"><b>HU06</b> Ver eventos, fechas y estado de cada uno<div class="meta"><span class="who" style="background:#c2188f">Miguel</span><span class="pt">3 pts</span></div></a></div><div class="kcol"><h4 style="border-color:#b78103">En revisión <span>1 HU · 3 pts</span></h4><a class="kcard" href="#HU02" style="border-left-color:#b78103"><b>HU02</b> Iniciar sesión<div class="meta"><span class="who" style="background:#b78103">Thomas</span><span class="pt">3 pts</span></div></a></div><div class="kcol"><h4 style="border-color:#2e7d32">Hecho <span>3 HU · 11 pts</span></h4><a class="kcard" href="#HU01" style="border-left-color:#b78103"><b>HU01</b> Registrarme con una identificación<div class="meta"><span class="who" style="background:#b78103">Thomas</span><span class="pt">5 pts</span></div></a><a class="kcard" href="#HU03" style="border-left-color:#2e7d32"><b>HU03</b> Crear un torneo<div class="meta"><span class="who" style="background:#2e7d32">Juan</span><span class="pt">3 pts</span></div></a><a class="kcard" href="#HU05" style="border-left-color:#c2188f"><b>HU05</b> Consultar torneos disponibles<div class="meta"><span class="who" style="background:#c2188f">Miguel</span><span class="pt">3 pts</span></div></a></div></div>
+
+<h2>2. Sprint backlog: historias, responsables y estimación</h2>
+<table><thead><tr><th>HU</th><th>Historia</th><th>Rol</th><th>Responsable</th><th>Revisa</th><th>Puntos</th><th>Estado</th></tr></thead><tbody><tr><td><a href="#HU01">HU01</a></td><td>Registrarme con una identificación</td><td>Usuario</td><td>Thomas</td><td>Juan</td><td class="n">5</td><td><span class="st" style="background:#2e7d32">Hecho</span></td></tr><tr><td><a href="#HU02">HU02</a></td><td>Iniciar sesión</td><td>Usuario</td><td>Thomas</td><td>Juan</td><td class="n">3</td><td><span class="st" style="background:#b78103">En revisión</span></td></tr><tr><td><a href="#HU03">HU03</a></td><td>Crear un torneo</td><td>Administrador</td><td>Juan</td><td>Miguel</td><td class="n">3</td><td><span class="st" style="background:#2e7d32">Hecho</span></td></tr><tr><td><a href="#HU04">HU04</a></td><td>Registrar un evento con fecha y opciones de pronóstico</td><td>Administrador</td><td>Juan</td><td>Miguel</td><td class="n">5</td><td><span class="st" style="background:#1971c2">En progreso</span></td></tr><tr><td><a href="#HU05">HU05</a></td><td>Consultar torneos disponibles</td><td>Usuario</td><td>Miguel</td><td>Thomas</td><td class="n">3</td><td><span class="st" style="background:#2e7d32">Hecho</span></td></tr><tr><td><a href="#HU06">HU06</a></td><td>Ver eventos, fechas y estado de cada uno</td><td>Usuario</td><td>Miguel</td><td>Thomas</td><td class="n">3</td><td><span class="st" style="background:#1971c2">En progreso</span></td></tr><tr><td><a href="#HU07">HU07</a></td><td>Asignar créditos iniciales a un usuario</td><td>Administrador</td><td>Juan</td><td>Miguel</td><td class="n">3</td><td><span class="st" style="background:#6b7280">Por hacer</span></td></tr><tr><td><a href="#HU08">HU08</a></td><td>Consultar mi saldo de créditos</td><td>Usuario</td><td>Miguel</td><td>Thomas</td><td class="n">2</td><td><span class="st" style="background:#6b7280">Por hacer</span></td></tr><tr><td><a href="#HU09">HU09</a></td><td>Restringir acciones según el rol y los permisos</td><td>Sistema</td><td>Thomas</td><td>Juan</td><td class="n">5</td><td><span class="st" style="background:#6b7280">Por hacer</span></td></tr><tr class="tot"><td colspan="5">Total del sprint</td><td class="n">32</td><td>11 pts hechos</td></tr></tbody></table>
+<h4>Carga por integrante</h4>
+<div class="persona">
+<div class="pc" style="--c:#2e7d32"><b>Juan</b><br>11 puntos asignados · 3 terminados</div><div class="pc" style="--c:#b78103"><b>Thomas</b><br>13 puntos asignados · 5 terminados</div><div class="pc" style="--c:#c2188f"><b>Miguel</b><br>8 puntos asignados · 3 terminados</div>
+</div>
+
+<h2>3. Avance y burndown</h2>
+<p class="note">Puntos pendientes al cierre de cada sesión de seguimiento.</p>
+<div class="chart"><svg viewBox="0 0 600 240" width="100%" role="img" aria-label="Burndown del sprint"><line x1="46" y1="204.0" x2="576" y2="204.0" stroke="#e5e7eb"/><text x="38" y="208.0" font-size="11" text-anchor="end" fill="#6b7280">0</text><line x1="46" y1="158.0" x2="576" y2="158.0" stroke="#e5e7eb"/><text x="38" y="162.0" font-size="11" text-anchor="end" fill="#6b7280">8</text><line x1="46" y1="112.0" x2="576" y2="112.0" stroke="#e5e7eb"/><text x="38" y="116.0" font-size="11" text-anchor="end" fill="#6b7280">16</text><line x1="46" y1="66.0" x2="576" y2="66.0" stroke="#e5e7eb"/><text x="38" y="70.0" font-size="11" text-anchor="end" fill="#6b7280">24</text><line x1="46" y1="20.0" x2="576" y2="20.0" stroke="#e5e7eb"/><text x="38" y="24.0" font-size="11" text-anchor="end" fill="#6b7280">32</text><polyline points="46.0,20.0 576.0,204.0" fill="none" stroke="#9ca3af" stroke-dasharray="5 4" stroke-width="2"/><polyline points="46.0,20.0 205.0,48.8 390.5,83.2 417.0,83.2" fill="none" stroke="#1971c2" stroke-width="3"/><circle cx="46.0" cy="20.0" r="5" fill="#1971c2"/><text x="46.0" y="10.0" font-size="12" font-weight="700" text-anchor="middle" fill="#1f2937">32</text><text x="46.0" y="228" font-size="11" text-anchor="middle" fill="#6b7280">20 oct</text><circle cx="205.0" cy="48.8" r="5" fill="#1971c2"/><text x="205.0" y="38.8" font-size="12" font-weight="700" text-anchor="middle" fill="#1f2937">27</text><text x="205.0" y="228" font-size="11" text-anchor="middle" fill="#6b7280">26 oct</text><circle cx="390.5" cy="83.2" r="5" fill="#1971c2"/><text x="390.5" y="73.2" font-size="12" font-weight="700" text-anchor="middle" fill="#1f2937">21</text><text x="386.5" y="228" font-size="11" text-anchor="end" fill="#6b7280">2 nov</text><circle cx="417.0" cy="83.2" r="5" fill="#1971c2"/><text x="417.0" y="73.2" font-size="12" font-weight="700" text-anchor="middle" fill="#1f2937">21</text><text x="421.0" y="228" font-size="11" text-anchor="start" fill="#6b7280">3 nov</text><text x="576.0" y="228" font-size="11" text-anchor="middle" fill="#6b7280">9 nov</text><text x="576" y="32" font-size="11" text-anchor="end" fill="#6b7280">línea punteada: avance ideal hasta el cierre (9 nov)</text></svg></div>
+
+<h2>4. Seguimiento del Scrum Master y del Product Owner</h2>
+<table><thead><tr><th>Rol</th><th>Quién</th><th>Qué hace en el sprint</th></tr></thead><tbody>
+<tr><td>Scrum Master</td><td>Juan</td><td>Facilita las reuniones semanales, mantiene actualizado el tablero y el burndown, registra impedimentos y vigila que la carga esté repartida.</td></tr>
+<tr><td>Product Owner</td><td>Miguel</td><td>Prioriza el backlog, aclara los criterios de aceptación y aprueba cada historia terminada contra esos criterios.</td></tr>
+</tbody></table>
+<p class="note" style="margin-top:10px">El detalle de lo que hizo cada uno en cada sesión está en el reporte de sesiones (sección 5).</p>
+
+<h2>5. Reporte de sesiones</h2>
+<p class="note">Reuniones de seguimiento los lunes a las 6:00 PM, según la regla del Canvas de equipo.</p>
+<div class="ses"><div class="sh"><b>Sesión 1 · Planeación del Sprint 1</b><span>Lunes 19 de octubre · 6:00 PM</span></div>
+<p class="small">Asistentes: Juan, Thomas y Miguel</p>
+<h5>Qué se trató</h5><ul><li>Se revisó el product backlog y se eligieron 9 historias del Release 1 (Must).</li><li>Se estimó cada historia en puntos y se acordó el objetivo: que el usuario pueda registrarse, ver torneos y eventos, y consultar su saldo.</li><li>Se asignó un responsable por historia y se armó el tablero en Trello.</li></ul>
+<h5>Acuerdos</h5><p>Sprint de 32 puntos. Cada responsable detalla sus historias con paso a paso y criterios de aceptación.</p>
+<div class="two"><div class="sm"><h5>Seguimiento del Scrum Master (Juan)</h5><p>Verificó que cada integrante quedara con una carga similar y que ninguno revisara su propia historia.</p></div>
+<div class="po"><h5>Seguimiento del Product Owner (Miguel)</h5><p>Priorizó las historias de acceso y de torneos antes que las de consulta de saldo.</p></div></div></div>
+<div class="ses"><div class="sh"><b>Sesión 2 · Seguimiento semanal</b><span>Lunes 26 de octubre · 6:00 PM</span></div>
+<p class="small">Asistentes: Juan, Thomas y Miguel</p>
+<h5>Qué se trató</h5><ul><li>Se cerró HU01 (registro de usuario).</li><li>HU03 y HU05 quedaron en progreso; HU04 se identificó como la más compleja.</li><li>Se revisaron los criterios de aceptación de las historias ya detalladas.</li></ul>
+<h5>Acuerdos</h5><p>Thomas deja HU02 en revisión esta semana. Juan adelanta HU04 con el modelo de eventos.</p>
+<div class="two"><div class="sm"><h5>Seguimiento del Scrum Master (Juan)</h5><p>Preguntó a cada uno por impedimentos. Se registró que HU04 depende de definir las modalidades de pronóstico.</p></div>
+<div class="po"><h5>Seguimiento del Product Owner (Miguel)</h5><p>Aclaró que el cierre de pronósticos debe ser anterior al inicio del evento y lo agregó a los criterios de HU04.</p></div></div></div>
+<div class="ses"><div class="sh"><b>Sesión 3 · Seguimiento semanal</b><span>Lunes 2 de noviembre · 6:00 PM</span></div>
+<p class="small">Asistentes: Juan, Thomas y Miguel</p>
+<h5>Qué se trató</h5><ul><li>Se cerraron HU03 y HU05; HU02 pasó a revisión.</li><li>HU04 y HU06 siguen en progreso.</li><li>HU07, HU08 y HU09 aún no inician.</li></ul>
+<h5>Acuerdos</h5><p>Se inicia HU09 una vez cerrada HU02. Se prepara este reporte de avance para la entrega.</p>
+<div class="two"><div class="sm"><h5>Seguimiento del Scrum Master (Juan)</h5><p>Actualizó el tablero y el burndown; alertó que quedan 21 puntos para el cierre del sprint.</p></div>
+<div class="po"><h5>Seguimiento del Product Owner (Miguel)</h5><p>Revisó las historias terminadas contra sus criterios de aceptación y las aprobó.</p></div></div></div>
+
+<h2>6. Detalle de cada historia de usuario</h2>
+<section class="hu" id="HU01">
+<h3>HU01 - Registrarme con una identificación</h3>
+<table class="kv">
+<tr><th>Identificador</th><td>HU01</td></tr>
+<tr><th>Nombre</th><td>Registrarme con una identificación</td></tr>
+<tr><th>Descripción</th><td>Como Usuario quiero registrarme con una identificación única para poder participar en los torneos de MatchPoint.</td></tr>
+<tr><th>Paso a paso</th><td><ol><li>El usuario abre el formulario de registro.</li><li>Diligencia nombre, identificación, correo y contraseña.</li><li>El sistema valida los campos y que la identificación no exista.</li><li>El sistema crea el usuario con el rol Usuario.</li><li>Se muestra la confirmación y se redirige al inicio de sesión.</li></ol></td></tr>
+<tr><th>Criterios de aceptación</th><td><ul><li>La identificación debe ser única; si ya existe se informa sin crear un segundo registro.</li><li>Todos los campos son obligatorios y cada error se muestra junto a su campo.</li><li>La contraseña se almacena cifrada, nunca en texto plano.</li><li>Si la solicitud se envía dos veces (doble clic o reintento), se crea un solo usuario.</li><li>Al registrarse con éxito se muestra un mensaje de confirmación.</li></ul></td></tr>
+<tr><th>Estimación</th><td>5 puntos</td></tr>
+<tr><th>Responsable</th><td>Thomas</td></tr>
+<tr><th>Estado</th><td>Hecho</td></tr>
+</table>
+<h4>Revisión</h4>
+<table><thead><tr><th>Criterio</th><th>Comentario</th><th>Realizado por</th></tr></thead><tbody><tr><td>Completo</td><td>El detalle es completo. Falta aclarar si el saldo inicial se asigna automáticamente al registrarse o lo asigna el administrador (HU07).</td><td>Juan</td></tr><tr><td>Consistente</td><td>Es consistente con la condición de que cada usuario cuente con una identificación dentro de la plataforma.</td><td>Juan</td></tr><tr><td>Negociable</td><td>La historia describe lo que se necesita sin imponer cómo se implementa; el equipo puede ajustar el detalle de registrarme con una identificación.</td><td>Juan</td></tr><tr><td>Valiosa</td><td>Es la puerta de entrada: sin registro no hay pronósticos ni créditos.</td><td>Juan</td></tr><tr><td>Estimable</td><td>Con la descripción y los criterios de aceptación es posible estimarla; se estimó en 5 puntos.</td><td>Juan</td></tr><tr><td>Pequeña</td><td>Es posible desarrollarla en aproximadamente 3 días.</td><td>Juan</td></tr><tr><td>Comprobable</td><td>Los 5 criterios de aceptación se pueden verificar con casos de prueba concretos.</td><td>Juan</td></tr></tbody></table>
+</section>
+<section class="hu" id="HU02">
+<h3>HU02 - Iniciar sesión</h3>
+<table class="kv">
+<tr><th>Identificador</th><td>HU02</td></tr>
+<tr><th>Nombre</th><td>Iniciar sesión</td></tr>
+<tr><th>Descripción</th><td>Como Usuario quiero iniciar sesión con mis credenciales para acceder a mis participaciones y a mi saldo.</td></tr>
+<tr><th>Paso a paso</th><td><ol><li>El usuario abre la pantalla de inicio de sesión.</li><li>Ingresa identificación y contraseña.</li><li>El sistema valida las credenciales.</li><li>Si son válidas, abre la sesión y muestra el inicio según su rol.</li><li>Si no lo son, muestra un mensaje de error.</li></ol></td></tr>
+<tr><th>Criterios de aceptación</th><td><ul><li>Con credenciales válidas se accede al inicio correspondiente al rol (Usuario o Administrador).</li><li>Con credenciales inválidas se muestra un mensaje genérico, sin indicar cuál dato falló.</li><li>Un usuario sin sesión no puede abrir pantallas internas; se redirige al inicio de sesión.</li><li>La sesión expira tras un tiempo de inactividad.</li></ul></td></tr>
+<tr><th>Estimación</th><td>3 puntos</td></tr>
+<tr><th>Responsable</th><td>Thomas</td></tr>
+<tr><th>Estado</th><td>En revisión</td></tr>
+</table>
+<h4>Revisión</h4>
+<table><thead><tr><th>Criterio</th><th>Comentario</th><th>Realizado por</th></tr></thead><tbody><tr><td>Completo</td><td>Está completo. Conviene definir cuántos minutos dura la sesión inactiva.</td><td>Juan</td></tr><tr><td>Consistente</td><td>Es consistente con HU01 y con HU09 (permisos por rol).</td><td>Juan</td></tr><tr><td>Negociable</td><td>La historia describe lo que se necesita sin imponer cómo se implementa; el equipo puede ajustar el detalle de iniciar sesión.</td><td>Juan</td></tr><tr><td>Valiosa</td><td>Garantiza que cada usuario solo vea y gestione sus propios datos.</td><td>Juan</td></tr><tr><td>Estimable</td><td>Con la descripción y los criterios de aceptación es posible estimarla; se estimó en 3 puntos.</td><td>Juan</td></tr><tr><td>Pequeña</td><td>Es posible desarrollarla en aproximadamente 1 día.</td><td>Juan</td></tr><tr><td>Comprobable</td><td>Los 4 criterios de aceptación se pueden verificar con casos de prueba concretos.</td><td>Juan</td></tr></tbody></table>
+</section>
+<section class="hu" id="HU03">
+<h3>HU03 - Crear un torneo</h3>
+<table class="kv">
+<tr><th>Identificador</th><td>HU03</td></tr>
+<tr><th>Nombre</th><td>Crear un torneo</td></tr>
+<tr><th>Descripción</th><td>Como Administrador quiero crear un torneo para organizar los eventos deportivos en los que los usuarios harán pronósticos.</td></tr>
+<tr><th>Paso a paso</th><td><ol><li>El administrador abre la opción Crear torneo.</li><li>Diligencia nombre, deporte, fecha de inicio y fecha de fin.</li><li>El sistema valida los datos.</li><li>Guarda el torneo con estado Activo.</li><li>Muestra el torneo en el listado.</li></ol></td></tr>
+<tr><th>Criterios de aceptación</th><td><ul><li>Solo un usuario con rol Administrador puede crear torneos.</li><li>Nombre, deporte y fechas son obligatorios; la fecha de fin no puede ser anterior a la de inicio.</li><li>No se permiten dos torneos con el mismo nombre y las mismas fechas.</li><li>Al guardar con éxito, el torneo aparece en el listado con estado Activo.</li></ul></td></tr>
+<tr><th>Estimación</th><td>3 puntos</td></tr>
+<tr><th>Responsable</th><td>Juan</td></tr>
+<tr><th>Estado</th><td>Hecho</td></tr>
+</table>
+<h4>Revisión</h4>
+<table><thead><tr><th>Criterio</th><th>Comentario</th><th>Realizado por</th></tr></thead><tbody><tr><td>Completo</td><td>Es completo. Falta decir si un torneo puede crearse sin eventos y quedar en borrador.</td><td>Miguel</td></tr><tr><td>Consistente</td><td>Es consistente con la condición de que solo usuarios autorizados administren torneos.</td><td>Miguel</td></tr><tr><td>Negociable</td><td>La historia describe lo que se necesita sin imponer cómo se implementa; el equipo puede ajustar el detalle de crear un torneo.</td><td>Miguel</td></tr><tr><td>Valiosa</td><td>Sin torneos no hay eventos ni pronósticos; es la base de la operación.</td><td>Miguel</td></tr><tr><td>Estimable</td><td>Con la descripción y los criterios de aceptación es posible estimarla; se estimó en 3 puntos.</td><td>Miguel</td></tr><tr><td>Pequeña</td><td>Es posible desarrollarla en aproximadamente 1 día.</td><td>Miguel</td></tr><tr><td>Comprobable</td><td>Los 4 criterios de aceptación se pueden verificar con casos de prueba concretos.</td><td>Miguel</td></tr></tbody></table>
+</section>
+<section class="hu" id="HU04">
+<h3>HU04 - Registrar un evento con fecha y opciones de pronóstico</h3>
+<table class="kv">
+<tr><th>Identificador</th><td>HU04</td></tr>
+<tr><th>Nombre</th><td>Registrar un evento con fecha y opciones de pronóstico</td></tr>
+<tr><th>Descripción</th><td>Como Administrador quiero registrar un evento dentro de un torneo, con su fecha y sus opciones de pronóstico, para que los usuarios puedan participar antes de su cierre.</td></tr>
+<tr><th>Paso a paso</th><td><ol><li>El administrador elige un torneo y pulsa Registrar evento.</li><li>Ingresa nombre, fecha y hora de inicio y fecha y hora de cierre de pronósticos.</li><li>Elige la modalidad: resultado (local, empate, visitante) o ganador.</li><li>Define las opciones según la modalidad.</li><li>El sistema valida y guarda el evento con estado Programado.</li></ol></td></tr>
+<tr><th>Criterios de aceptación</th><td><ul><li>El evento pertenece a un torneo existente.</li><li>El cierre de pronósticos debe ser anterior o igual al inicio del evento.</li><li>La modalidad define las opciones: resultado tiene 3 opciones fijas; ganador tiene 2 o más participantes.</li><li>El evento se crea en estado Programado y aparece en el torneo.</li><li>Si falta algún dato se muestra el error y no se guarda nada.</li></ul></td></tr>
+<tr><th>Estimación</th><td>5 puntos</td></tr>
+<tr><th>Responsable</th><td>Juan</td></tr>
+<tr><th>Estado</th><td>En progreso</td></tr>
+</table>
+<h4>Revisión</h4>
+<table><thead><tr><th>Criterio</th><th>Comentario</th><th>Realizado por</th></tr></thead><tbody><tr><td>Completo</td><td>Es completo, pero es la HU más grande del sprint. Hace falta precisar qué pasa si se modifica la fecha con pronósticos ya registrados (queda para el Release 2).</td><td>Miguel</td></tr><tr><td>Consistente</td><td>Es consistente con el enunciado: modalidades de pronóstico y periodo habilitado por evento.</td><td>Miguel</td></tr><tr><td>Negociable</td><td>La historia describe lo que se necesita sin imponer cómo se implementa; el equipo puede ajustar el detalle de registrar un evento con fecha y opciones de pronóstico.</td><td>Miguel</td></tr><tr><td>Valiosa</td><td>Define el periodo y las opciones que luego validan los pronósticos.</td><td>Miguel</td></tr><tr><td>Estimable</td><td>Con la descripción y los criterios de aceptación es posible estimarla; se estimó en 5 puntos.</td><td>Miguel</td></tr><tr><td>Pequeña</td><td>Es posible desarrollarla en aproximadamente 3 días.</td><td>Miguel</td></tr><tr><td>Comprobable</td><td>Los 5 criterios de aceptación se pueden verificar con casos de prueba concretos.</td><td>Miguel</td></tr></tbody></table>
+</section>
+<section class="hu" id="HU05">
+<h3>HU05 - Consultar torneos disponibles</h3>
+<table class="kv">
+<tr><th>Identificador</th><td>HU05</td></tr>
+<tr><th>Nombre</th><td>Consultar torneos disponibles</td></tr>
+<tr><th>Descripción</th><td>Como Usuario quiero consultar los torneos disponibles para elegir en cuál quiero participar.</td></tr>
+<tr><th>Paso a paso</th><td><ol><li>El usuario inicia sesión.</li><li>Abre la sección Torneos.</li><li>El sistema lista los torneos activos con nombre, deporte y fechas.</li><li>El usuario selecciona un torneo para ver su detalle.</li></ol></td></tr>
+<tr><th>Criterios de aceptación</th><td><ul><li>Se listan solo los torneos con estado Activo.</li><li>Cada torneo muestra nombre, deporte, fecha de inicio y de fin.</li><li>Si no hay torneos se muestra el mensaje «No hay torneos disponibles».</li><li>Se puede abrir el detalle de un torneo desde el listado.</li></ul></td></tr>
+<tr><th>Estimación</th><td>3 puntos</td></tr>
+<tr><th>Responsable</th><td>Miguel</td></tr>
+<tr><th>Estado</th><td>Hecho</td></tr>
+</table>
+<h4>Revisión</h4>
+<table><thead><tr><th>Criterio</th><th>Comentario</th><th>Realizado por</th></tr></thead><tbody><tr><td>Completo</td><td>Está completo. Falta indicar el orden del listado (por fecha de inicio).</td><td>Thomas</td></tr><tr><td>Consistente</td><td>Es consistente con la necesidad de consultar torneos disponibles y sus fechas.</td><td>Thomas</td></tr><tr><td>Negociable</td><td>La historia describe lo que se necesita sin imponer cómo se implementa; el equipo puede ajustar el detalle de consultar torneos disponibles.</td><td>Thomas</td></tr><tr><td>Valiosa</td><td>Es el punto de partida del usuario para participar.</td><td>Thomas</td></tr><tr><td>Estimable</td><td>Con la descripción y los criterios de aceptación es posible estimarla; se estimó en 3 puntos.</td><td>Thomas</td></tr><tr><td>Pequeña</td><td>Es posible desarrollarla en aproximadamente 1 día.</td><td>Thomas</td></tr><tr><td>Comprobable</td><td>Los 4 criterios de aceptación se pueden verificar con casos de prueba concretos.</td><td>Thomas</td></tr></tbody></table>
+</section>
+<section class="hu" id="HU06">
+<h3>HU06 - Ver eventos, fechas y estado de cada uno</h3>
+<table class="kv">
+<tr><th>Identificador</th><td>HU06</td></tr>
+<tr><th>Nombre</th><td>Ver eventos, fechas y estado de cada uno</td></tr>
+<tr><th>Descripción</th><td>Como Usuario quiero ver los eventos de un torneo con sus fechas y su estado para saber en cuáles puedo registrar un pronóstico.</td></tr>
+<tr><th>Paso a paso</th><td><ol><li>El usuario abre un torneo.</li><li>El sistema lista sus eventos con fecha, hora, opciones y estado.</li><li>El usuario identifica los eventos abiertos a pronósticos.</li></ol></td></tr>
+<tr><th>Criterios de aceptación</th><td><ul><li>Cada evento muestra fecha, hora de cierre y estado (Programado, Cerrado, Finalizado).</li><li>Los eventos cerrados se distinguen visualmente y no ofrecen registrar pronóstico.</li><li>Se muestran las opciones de pronóstico de cada evento.</li><li>Si el torneo no tiene eventos se muestra un mensaje informativo.</li></ul></td></tr>
+<tr><th>Estimación</th><td>3 puntos</td></tr>
+<tr><th>Responsable</th><td>Miguel</td></tr>
+<tr><th>Estado</th><td>En progreso</td></tr>
+</table>
+<h4>Revisión</h4>
+<table><thead><tr><th>Criterio</th><th>Comentario</th><th>Realizado por</th></tr></thead><tbody><tr><td>Completo</td><td>Es completo. Falta definir los colores o etiquetas de cada estado; esto se resuelve en el prototipo.</td><td>Thomas</td></tr><tr><td>Consistente</td><td>Es consistente con HU04, porque usa el mismo estado y las mismas fechas.</td><td>Thomas</td></tr><tr><td>Negociable</td><td>La historia describe lo que se necesita sin imponer cómo se implementa; el equipo puede ajustar el detalle de ver eventos, fechas y estado de cada uno.</td><td>Thomas</td></tr><tr><td>Valiosa</td><td>Evita que el usuario intente participar en eventos ya cerrados.</td><td>Thomas</td></tr><tr><td>Estimable</td><td>Con la descripción y los criterios de aceptación es posible estimarla; se estimó en 3 puntos.</td><td>Thomas</td></tr><tr><td>Pequeña</td><td>Es posible desarrollarla en aproximadamente 1 día.</td><td>Thomas</td></tr><tr><td>Comprobable</td><td>Los 4 criterios de aceptación se pueden verificar con casos de prueba concretos.</td><td>Thomas</td></tr></tbody></table>
+</section>
+<section class="hu" id="HU07">
+<h3>HU07 - Asignar créditos iniciales a un usuario</h3>
+<table class="kv">
+<tr><th>Identificador</th><td>HU07</td></tr>
+<tr><th>Nombre</th><td>Asignar créditos iniciales a un usuario</td></tr>
+<tr><th>Descripción</th><td>Como Administrador quiero asignar créditos virtuales iniciales a un usuario para que pueda participar en las dinámicas de pronóstico.</td></tr>
+<tr><th>Paso a paso</th><td><ol><li>El administrador busca un usuario.</li><li>Pulsa Asignar créditos e ingresa la cantidad.</li><li>El sistema valida que la cantidad sea mayor que cero.</li><li>Registra un movimiento de tipo asignación y actualiza el saldo.</li><li>Muestra la confirmación con el nuevo saldo.</li></ol></td></tr>
+<tr><th>Criterios de aceptación</th><td><ul><li>Solo un Administrador puede asignar créditos.</li><li>La cantidad debe ser un entero mayor que cero.</li><li>Cada asignación genera un movimiento con usuario, tipo, cantidad, fecha y responsable.</li><li>Si la solicitud se repite por error de conexión, el movimiento no se duplica.</li><li>Los créditos son virtuales; la pantalla indica que no tienen valor monetario.</li></ul></td></tr>
+<tr><th>Estimación</th><td>3 puntos</td></tr>
+<tr><th>Responsable</th><td>Juan</td></tr>
+<tr><th>Estado</th><td>Por hacer</td></tr>
+</table>
+<h4>Revisión</h4>
+<table><thead><tr><th>Criterio</th><th>Comentario</th><th>Realizado por</th></tr></thead><tbody><tr><td>Completo</td><td>Es completo. Falta definir un tope máximo por asignación.</td><td>Miguel</td></tr><tr><td>Consistente</td><td>Es consistente con la asignación inicial y con la trazabilidad de movimientos del enunciado.</td><td>Miguel</td></tr><tr><td>Negociable</td><td>La historia describe lo que se necesita sin imponer cómo se implementa; el equipo puede ajustar el detalle de asignar créditos iniciales a un usuario.</td><td>Miguel</td></tr><tr><td>Valiosa</td><td>Sin créditos el usuario no puede participar; además inicia el historial de movimientos.</td><td>Miguel</td></tr><tr><td>Estimable</td><td>Con la descripción y los criterios de aceptación es posible estimarla; se estimó en 3 puntos.</td><td>Miguel</td></tr><tr><td>Pequeña</td><td>Es posible desarrollarla en aproximadamente 1 día.</td><td>Miguel</td></tr><tr><td>Comprobable</td><td>Los 5 criterios de aceptación se pueden verificar con casos de prueba concretos.</td><td>Miguel</td></tr></tbody></table>
+</section>
+<section class="hu" id="HU08">
+<h3>HU08 - Consultar mi saldo de créditos</h3>
+<table class="kv">
+<tr><th>Identificador</th><td>HU08</td></tr>
+<tr><th>Nombre</th><td>Consultar mi saldo de créditos</td></tr>
+<tr><th>Descripción</th><td>Como Usuario quiero consultar mi saldo de créditos para saber cuántos puedo usar en mis pronósticos.</td></tr>
+<tr><th>Paso a paso</th><td><ol><li>El usuario inicia sesión.</li><li>Abre Mi saldo o lo ve en el encabezado.</li><li>El sistema calcula el saldo a partir de los movimientos registrados.</li><li>Se muestra el saldo disponible.</li></ol></td></tr>
+<tr><th>Criterios de aceptación</th><td><ul><li>El usuario solo ve su propio saldo.</li><li>El saldo coincide con la suma de sus movimientos registrados.</li><li>Se muestra la leyenda «Créditos virtuales: sin valor monetario ni posibilidad de retiro».</li><li>Si no tiene movimientos, el saldo es 0.</li></ul></td></tr>
+<tr><th>Estimación</th><td>2 puntos</td></tr>
+<tr><th>Responsable</th><td>Miguel</td></tr>
+<tr><th>Estado</th><td>Por hacer</td></tr>
+</table>
+<h4>Revisión</h4>
+<table><thead><tr><th>Criterio</th><th>Comentario</th><th>Realizado por</th></tr></thead><tbody><tr><td>Completo</td><td>Está completo. Falta definir si el saldo se actualiza solo o al recargar la pantalla.</td><td>Thomas</td></tr><tr><td>Consistente</td><td>Es consistente con el requisito de que el saldo pueda verificarse con los movimientos.</td><td>Thomas</td></tr><tr><td>Negociable</td><td>La historia describe lo que se necesita sin imponer cómo se implementa; el equipo puede ajustar el detalle de consultar mi saldo de créditos.</td><td>Thomas</td></tr><tr><td>Valiosa</td><td>Da confianza al usuario sobre lo que puede usar.</td><td>Thomas</td></tr><tr><td>Estimable</td><td>Con la descripción y los criterios de aceptación es posible estimarla; se estimó en 2 puntos.</td><td>Thomas</td></tr><tr><td>Pequeña</td><td>Es posible desarrollarla en aproximadamente 1 día.</td><td>Thomas</td></tr><tr><td>Comprobable</td><td>Los 4 criterios de aceptación se pueden verificar con casos de prueba concretos.</td><td>Thomas</td></tr></tbody></table>
+</section>
+<section class="hu" id="HU09">
+<h3>HU09 - Restringir acciones según el rol y los permisos</h3>
+<table class="kv">
+<tr><th>Identificador</th><td>HU09</td></tr>
+<tr><th>Nombre</th><td>Restringir acciones según el rol y los permisos</td></tr>
+<tr><th>Descripción</th><td>Como Sistema quiero restringir cada acción según el rol del usuario para que solo los autorizados administren torneos, eventos y créditos.</td></tr>
+<tr><th>Paso a paso</th><td><ol><li>Se definen los roles Administrador y Usuario.</li><li>Cada operación declara qué roles puede ejecutarla.</li><li>El sistema verifica el rol en cada solicitud.</li><li>Si no tiene permiso, rechaza la operación y registra el intento.</li></ol></td></tr>
+<tr><th>Criterios de aceptación</th><td><ul><li>Un Usuario no puede crear torneos, registrar eventos ni asignar créditos.</li><li>Un Usuario solo accede a sus propias participaciones y movimientos.</li><li>Una acción no permitida devuelve un mensaje de acceso denegado.</li><li>La verificación se hace en el servidor, no solo ocultando botones en pantalla.</li></ul></td></tr>
+<tr><th>Estimación</th><td>5 puntos</td></tr>
+<tr><th>Responsable</th><td>Thomas</td></tr>
+<tr><th>Estado</th><td>Por hacer</td></tr>
+</table>
+<h4>Revisión</h4>
+<table><thead><tr><th>Criterio</th><th>Comentario</th><th>Realizado por</th></tr></thead><tbody><tr><td>Completo</td><td>Es completo. Falta listar la matriz de permisos por operación; se propone anexarla a la wiki.</td><td>Juan</td></tr><tr><td>Consistente</td><td>Es consistente con las condiciones de operación de Nexo Digital Labs.</td><td>Juan</td></tr><tr><td>Negociable</td><td>La historia describe lo que se necesita sin imponer cómo se implementa; el equipo puede ajustar el detalle de restringir acciones según el rol y los permisos.</td><td>Juan</td></tr><tr><td>Valiosa</td><td>Protege los datos y los saldos de los usuarios.</td><td>Juan</td></tr><tr><td>Estimable</td><td>Con la descripción y los criterios de aceptación es posible estimarla; se estimó en 5 puntos.</td><td>Juan</td></tr><tr><td>Pequeña</td><td>Es posible desarrollarla en aproximadamente 2 días.</td><td>Juan</td></tr><tr><td>Comprobable</td><td>Los 4 criterios de aceptación se pueden verificar con casos de prueba concretos.</td><td>Juan</td></tr></tbody></table>
+</section>
+</div></body></html>
