@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Review Sprint 2 - MatchPoint</title><style>
+*{box-sizing:border-box}body{font-family:'Segoe UI',Roboto,Arial,sans-serif;color:#1f2937;margin:0;line-height:1.55}
+.wrap{max-width:900px;margin:0 auto;padding:32px 20px 80px}
+h1{margin:0 0 4px;font-size:30px}h2{margin:40px 0 12px;font-size:22px;border-bottom:1px solid #e5e7eb;padding-bottom:6px}
+.sub{color:#6b7280;margin:0}.card{border:1px solid #e5e7eb;border-radius:10px;padding:16px 18px;margin:12px 0}
+.btn{display:inline-block;background:#1971c2;color:#fff;text-decoration:none;padding:9px 18px;border-radius:6px;font-weight:600}
+.url{font-size:13px;color:#6b7280;margin-top:6px;word-break:break-all}
+.pend{background:#fff3bf;border:2px dashed #f08c00;padding:10px 14px;border-radius:6px;font-weight:700;color:#7a4a00}
+table{border-collapse:collapse;width:100%;font-size:14px}th,td{border:1px solid #d1d5db;padding:8px 10px;text-align:left;vertical-align:top}th{background:#e5e7eb}
+.star{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}.star div{border-radius:8px;padding:10px;font-size:13px}
+.k{background:#dcf5e0}.l{background:#ffe3e3}.m{background:#dbe9ff}.s{background:#fff3cd}.t{background:#eadcf8}
+.star b{display:block;font-size:14px;margin-bottom:4px}
+.rb{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}.rc{border-radius:8px;padding:10px}.rc h4{margin:0 0 8px;font-size:15px}
+.rc p{background:#fff;border-radius:6px;padding:8px 9px;margin:0 0 8px;font-size:13px;box-shadow:0 1px 2px rgba(0,0,0,.15)}
+.rc.k{background:#dcf5e0}.rc.l{background:#ffe3e3}.rc.m{background:#dbe9ff}.rc.s{background:#fff3cd}.rc.t{background:#eadcf8}
+@media(max-width:900px){.rb{grid-template-columns:1fr}}
+@media(max-width:800px){.star{grid-template-columns:1fr}}
+</style></head>
+<body><div class="wrap">
+<h1>Review Sprint 2 - MatchPoint</h1>
+<p class="sub">Equipo 1: Juan Ramírez, Thomas Mendoza y Miguel Oviedo · Nexo Digital Labs</p>
+
+<h2>1. Código fuente del aplicativo</h2>
+<div class="card"><a class="btn" href="https://github.com/Juansiho/fase-inicio-mercados-organicos" target="_blank" rel="noopener">Abrir el repositorio del código</a><div class="url">https://github.com/Juansiho/fase-inicio-mercados-organicos</div>
+<p style="margin:12px 0 4px">El código del aplicativo está en la carpeta <b>app</b> del repositorio (archivo <b>app/index.html</b>, HTML, CSS y JavaScript).</p>
+<p style="margin:0"><a class="btn" style="background:#2e7d32" href="https://juansiho.github.io/fase-inicio-mercados-organicos/app/index.html" target="_blank" rel="noopener">Probar el aplicativo en línea</a></p>
+<p class="url">https://juansiho.github.io/fase-inicio-mercados-organicos/app/index.html</p>
+<p class="url">Usuario administrador de prueba: <b>admin</b> / <b>admin123</b>. Los usuarios normales se registran desde la pantalla de inicio.</p></div>
+
+<h2>2. Review del Sprint 2 (video, máximo 8 minutos)</h2>
+<div class="card">
+<p style="margin:0 0 6px">Cada integrante presenta las historias de usuario que desarrolló y muestra la funcionalidad en el sistema. Los tres aparecen en el video, cuyo enlace se publica en los comentarios de la entrega.</p>
+<table><thead><tr><th>Integrante</th><th>Historias de usuario presentadas</th></tr></thead><tbody>
+<tr><td>Juan Ramírez</td><td><b>HU03</b> Crear un torneo · <b>HU04</b> Registrar un evento con fecha y opciones de pronóstico · <b>HU07</b> Asignar créditos iniciales a un usuario</td></tr>
+<tr><td>Thomas Mendoza</td><td><b>HU01</b> Registrarme con una identificación · <b>HU02</b> Iniciar sesión · <b>HU09</b> Restringir acciones según el rol y los permisos</td></tr>
+<tr><td>Miguel Oviedo</td><td><b>HU05</b> Consultar torneos disponibles · <b>HU06</b> Ver eventos, fechas y estado · <b>HU08</b> Consultar mi saldo de créditos</td></tr>
+</tbody></table></div>
+
+<h2>3. Retrospectiva del sprint</h2>
+<div class="card"><div class="rb">
+<div class="rc k"><h4>Mantener</h4>
+<p>Repartimos las historias entre los tres según nuestras habilidades: arquitectura, backend y experiencia de usuario.</p>
+<p>Documentar antes de programar (canvas, mapa de historias y backlog) nos dio una guía clara de qué construir.</p></div>
+<div class="rc l"><h4>Menos de</h4>
+<p>Dejar el trabajo para los últimos días antes de la entrega.</p>
+<p>Depender de un solo equipo o herramienta para subir el trabajo: con las máquinas de la universidad no pudimos usar Git.</p></div>
+<div class="rc m"><h4>Más de</h4>
+<p>Probar cada historia con casos concretos antes de mostrarla: datos repetidos, fechas inválidas y permisos por rol.</p>
+<p>Reuniones cortas de seguimiento durante la semana, no solo al cierre del sprint.</p></div>
+<div class="rc s"><h4>Empezar</h4>
+<p>Usar Git con commits pequeños por historia, accesible desde cualquier equipo.</p>
+<p>Definir desde el inicio la tecnología (Java y base de datos) y qué significa "terminado" para cada historia.</p></div>
+<div class="rc t"><h4>Dejar de hacer</h4>
+<p>Pegar contenido entre herramientas sin revisarlo: se nos dañó el formato varias veces.</p>
+<p>Reportar el avance sin contrastarlo antes con el estado real del tablero.</p></div>
+</div>
+<p style="margin:12px 0 6px"><b>Estrategia usada: Starfish (estrella de mar).</b> Se escogió porque, en vez de solo preguntar qué salió bien o mal, mide el grado: qué mantener, qué reducir y qué aumentar. Eso permite ajustar el proceso del siguiente sprint con decisiones concretas.</p>
+<div class="star">
+<div class="k"><b>Mantener</b>Lo que funciona y se sigue haciendo igual.</div>
+<div class="l"><b>Menos de</b>Lo que se hizo de más y quita tiempo.</div>
+<div class="m"><b>Más de</b>Lo que funciona y conviene hacer más.</div>
+<div class="s"><b>Empezar</b>Lo que no se hace y ayudaría.</div>
+<div class="t"><b>Dejar de hacer</b>Lo que no aporta o estorba.</div>
+</div>
+<p style="margin:12px 0 0;font-size:14px;color:#4b5563">Otras estrategias consideradas: el velero (viento que impulsa, anclas que frenan, rocas que son riesgos) y las 4L (Liked, Learned, Lacked, Longed for).</p></div>
+</div></body></html>
